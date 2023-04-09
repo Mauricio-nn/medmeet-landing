@@ -23,7 +23,6 @@
 
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -48,10 +47,8 @@
 
 
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## :question:About The Project
 This project was made as an final project for the course Open Source Applications by Software Engineer students at University of Applied Sciences (UPC), Peru 😃
 
 <div align="center">
@@ -61,14 +58,12 @@ This project was made as an final project for the course Open Source Application
 </div>
 
 ### Built With
-* [![Tailwind][tailwind-shield]][tailwind-url]
-
-
+[![Tailwind][tailwind-shield]][tailwind-url]
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## :wrench:Getting Started
 
 ### Installation
 
@@ -87,9 +82,8 @@ This project was made as an final project for the course Open Source Application
 
 
 
-
 <!-- CONTRIBUTING -->
-## Contributing
+## :bulb:Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -104,26 +98,19 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-
-
 <!-- LICENSE -->
-## License
+## :scroll:License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 
 
 <!-- CONTACT -->
-## Contact
+## :email:Contact
 
 [Medtech Innovations](https://github.com/Medtech-Innovations)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 
