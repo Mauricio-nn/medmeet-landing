@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Lato", system-ui, sans-serif;
+  }
+}
+
+@layer components {
+    /*Buttons*/
+    .btn {
+        @apply py-2 px-8;
+        @apply rounded-full;
+        @apply hover:scale-95
+    }
+
+    .btn-primary-fill{
+        @apply border-2 border-lightblue hover:bg-lightblue;
+        @apply text-lightblue hover:text-white;
+        @apply duration-200
+    };
+
+    .btn-secondary-fill{
+        @apply border-2 border-blue hover:bg-blue;
+        @apply text-blue hover:text-white;
+        @apply duration-200
+    };
+
+    /*Cards*/
+    .card-steps{
+        @apply bg-lightblue drop-shadow-md shadow-black;
+        @apply py-14 px-8;
+        @apply text-white
+    }
+
+}

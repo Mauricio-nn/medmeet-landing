@@ -13,16 +13,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/output.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <h1 class="bg-emerald-400">navbar</h1>
+    <!-- Navbar -->
+    <header class="flex justify-around items-center p-4 bg-white container">
+        <a href="#">
+            <img class="h-8 hover:scale-95 duration-200 " src="./assets/logo-medmeet.png" alt="Medmeet logo">
+        </a>
+        <div class="hidden md:flex">
+            <nav class="font-medium">
+                <ul class="flex items-center gap-6">
+                    <li><a id="features-link" class="hover:text-lightblue hover:cursor-pointer">Features</a></li>
+                    <li><a id="customer-link" class="hover:text-lightblue hover:cursor-pointer">Customers</a></li>
+                    <li><a href="#" class="hover:text-lightblue hover:cursor-pointer">Doctors</a></li>
+                    <li><button class="btn btn-primary-fill" href="#">Log in</button></li>
+                    <li><button href="#" class="btn btn-secondary-fill">Book now</button></li>
+                </ul>
+            </nav>
+        </div>
+        <button id="toggle-navbar-btn" class="md:hidden rounded-lg p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>      
+        </button>
+    </header>
+
+    <main class="grid grid-cols-1">
+
+        <!-- Specialties -->
         <h1 class="bg-emerald-400">specialties</h1>
+
+        <!-- Features -->
         <h1 class="bg-emerald-400">features</h1>
+
+        <!-- Testimonials -->
         <h1 class="bg-emerald-400">testimonials</h1>
+
+        <!-- Book now -->
         <h1 class="bg-emerald-400">booknow</h1>
-        <h1 class="bg-emerald-400">footer</h1>
+
+
     </main>
 </body>
 
