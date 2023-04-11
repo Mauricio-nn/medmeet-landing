@@ -643,7 +643,13 @@ html {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+.mb-4{
+  
+  margin-bottom: 2rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -774,6 +780,9 @@ html {
 .text-24 {
   font-size: 24px;
 }
+.text-32{
+  font-size: 32px;
+}
 
 .text-56 {
   font-size: 56px;
@@ -824,6 +833,10 @@ html {
   color: rgb(0 159 223 / var(--tw-text-opacity));
 }
 
+.md\:w-100{
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
@@ -857,10 +870,26 @@ html {
   .md\:text-left {
     text-align: left;
   }
+
+  .md\:gap-10{
+    gap: 10%;
+  }
+  .md\:w-45{
+    width: 45%;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+
+.feature-img {
+  width: 100px;
+  height: 100px;
+}
+.w-100{
+  width: 100%;
 }
