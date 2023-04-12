@@ -1,164 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Medmeet | Online Doctor Appointments available now</title>
     <meta charset="utf-8" />
-    <meta name="description" content="Get fast, affordable and reliable to remote
+    <meta
+      name="description"
+      content="Get fast, affordable and reliable to remote
     medical consultations with licensed doctors from the comfort of your home. Sign
-    up now for online medical care 24/7.">
-    <meta name="keywords"
-        content="online doctor appointments, telemedicine, virtual healthcare, medical consultations, health appointments, doctor visits, health consultations, online medical care, virtual doctor visits, medical appointments, telehealth, virtual appointments, online healthcare,remote medical consultations" />
+    up now for online medical care 24/7."
+    />
+    <meta
+      name="keywords"
+      content="online doctor appointments, telemedicine, virtual healthcare, medical consultations, health appointments, doctor visits, health consultations, online medical care, virtual doctor visits, medical appointments, telehealth, virtual appointments, online healthcare,remote medical consultations"
+    />
     <meta name="author" content="Medtech Innovation" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/output.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="styles/output.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Navbar -->
     <header class="flex justify-around items-center p-4 bg-white container">
-        <a href="#">
-            <img class="h-8 hover:scale-95 duration-200 " src="./assets/logo-medmeet.png" alt="Medmeet logo">
-        </a>
-        <div class="hidden md:flex">
-            <nav class="font-medium">
-                <ul class="flex items-center gap-6">
-                    <li><a id="features-link" class="hover:text-lightblue hover:cursor-pointer">Features</a></li>
-                    <li><a id="customer-link" class="hover:text-lightblue hover:cursor-pointer">Customers</a></li>
-                    <li><a href="#" class="hover:text-lightblue hover:cursor-pointer">Doctors</a></li>
-                    <li><button class="btn btn-primary-fill" href="#">Log in</button></li>
-                    <li><button href="#" class="btn btn-secondary-fill">Book now</button></li>
-                </ul>
-            </nav>
-        </div>
-        <button id="toggle-navbar-btn" class="md:hidden rounded-lg p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>      
-        </button>
+      <a href="#">
+        <img
+          class="h-8 hover:scale-95 duration-200"
+          src="./assets/logo-medmeet.png"
+          alt="Medmeet logo"
+        />
+      </a>
+      <div class="hidden md:flex">
+        <nav class="font-medium">
+          <ul class="flex items-center gap-6">
+            <li>
+              <a
+                id="features-link"
+                class="hover:text-lightblue hover:cursor-pointer"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                id="customer-link"
+                class="hover:text-lightblue hover:cursor-pointer"
+                >Customers</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-lightblue hover:cursor-pointer"
+                >Doctors</a
+              >
+            </li>
+            <li>
+              <button class="btn btn-primary-fill" href="#">Log in</button>
+            </li>
+            <li>
+              <button href="#" class="btn btn-secondary-fill">Book now</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button id="toggle-navbar-btn" class="md:hidden rounded-lg p-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
     </header>
 
     <main class="grid grid-cols-1">
-        <!-- Hero -->
-        <section id="hero" class="bg-hero bg-cover">
-            <div class="flex flex-col justify-cente p-12 container">
-                <div class="text-center md:text-left">
-                    <h1 class="text-56 font-bold section-title md:text-left">Online Medical<br>Appointments <a class="text-orange">Booking</a><br>Software</h1>
-                    <p class="text-24 my-6">Book medical appointments with over 
-                    <a class="text-blue font-bold">5000</a> 
-                    doctors and<br>health specialists around the 
-                    <a class="text-blue font-bold">world</a> 
-                    for affordable prices.
-                    </p>
-                    <button class="btn btn-secondary-fill">Sign up</button>
-                </div>
-            </div>
-            <!-- Steps -->
-            <div class="flex container">
-                <div class="card-steps">
-                    <img class="w-18 h-auto pb-6" src="/src/assets/calendar-svgrepo-com 1.svg" alt="calendar" />
-                    <h1 class="text-24 font-medium">01 Book an appointment</h1>
-                    <p class="text-16">No more waiting for hours in a clinic, or months to see your doctor. Doctors on your schedule, book online for reasonable prices.</p>
-                </div>
-                <div class="card-steps">
-                    <img class="w-18 h-auto pb-6" src="/src/assets/doctor.svg" alt="doctor" />
-                    <h1 class="text-24 font-medium">02 Speak to a Doctor</h1>
-                    <p class="text-16">Speak directly with professional doctors via video conference through the app, on any device. You’re in control and your time is valuable.</p>
-                </div>
-                <div class="card-steps">
-                    <img class="w-18 h-auto pb-6" src="/src/assets/community-group-leader-svgrepo-com 1.svg" alt="wrap up" />
-                    <h1 class="text-24 font-medium">03 Wrap Up</h1>
-                    <p class="text-16">Receive prescriptions, get medical coupons and discounts, chat with your doctor and take a look at Medmeet community.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Specialties -->
-        <h1 class="bg-emerald-400">specialties</h1>
+      <!-- Hero -->
+      <section id="hero" class="bg-hero bg-cover">
+        <div class="flex flex-col justify-cente p-12 container">
+          <div class="text-center md:text-left">
+            <h1 class="text-56 font-bold section-title md:text-left">
+              Online Medical<br />Appointments <a class="text-orange">Booking</a
+              ><br />Software
+            </h1>
+            <p class="text-24 my-6">
+              Book medical appointments with over
+              <a class="text-blue font-bold">5000</a>
+              doctors and<br />health specialists around the
+              <a class="text-blue font-bold">world</a>
+              for affordable prices.
+            </p>
+            <button class="btn btn-secondary-fill">Sign up</button>
+          </div>
+        </div>
+        <!-- Steps -->
+        <div class="flex container">
+          <div class="card-steps">
+            <img
+              class="w-18 h-auto pb-6"
+              src="/src/assets/calendar-svgrepo-com 1.svg"
+              alt="calendar"
+            />
+            <h1 class="text-24 font-medium">01 Book an appointment</h1>
+            <p class="text-16">
+              No more waiting for hours in a clinic, or months to see your
+              doctor. Doctors on your schedule, book online for reasonable
+              prices.
+            </p>
+          </div>
+          <div class="card-steps">
+            <img
+              class="w-18 h-auto pb-6"
+              src="/src/assets/doctor.svg"
+              alt="doctor"
+            />
+            <h1 class="text-24 font-medium">02 Speak to a Doctor</h1>
+            <p class="text-16">
+              Speak directly with professional doctors via video conference
+              through the app, on any device. You’re in control and your time is
+              valuable.
+            </p>
+          </div>
+          <div class="card-steps">
+            <img
+              class="w-18 h-auto pb-6"
+              src="/src/assets/community-group-leader-svgrepo-com 1.svg"
+              alt="wrap up"
+            />
+            <h1 class="text-24 font-medium">03 Wrap Up</h1>
+            <p class="text-16">
+              Receive prescriptions, get medical coupons and discounts, chat
+              with your doctor and take a look at Medmeet community.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Features -->
-        <section id="features-link">
-            <div class="container">
-                <div class="flex flex-col items-center">
-                    <h1 class=" text-center bg-emerald-400 text-16 text-orange font-bold">FEATURES</h1>
-                    <h2 class="mb-2 text-center text-32 font-bold">Doctors at your fingertip anytime, anywhere</h2>
-                    <p class="mb-2 text-center text-24 font-medium">We aim to make health reachable for everyone</p>
-                    <button class="mb-4 text-16 btn btn-secondary-fill">Start now</button>
-                </div>
-                <div class="flex flex-wrap md:gap-10 ">
-                    <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
-                        <img class="feature-img" src="./assets/videocall-svgrepo-com 1.png" alt="">
-                        <div>
-                            <h3 class="text-24 font-bold">Collaborative <span class="text-orange">videoconferences</span> </h3>
-                            <p class="text-16">Collaborative tools to share windows, in-conference chat and file sharing to make your experience smoother.</p>
-                        </div>
-                    </div>
-                    <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
-                        <img class="feature-img" src="./assets/chat-svgrepo-com 1.png" alt="">
-                        <div>
-                            <h3 class="text-24 font-bold"> <span class="text-orange">Non-stop</span>  communication</h3>
-                            <p class="text-16">We know that you might have doubts about that prescription the doctor sent you. Don’t worry, with Medmeet you can easily reach your doctor anytime with integrated chat within the application</p>
-                        </div>
-                    </div >
-                    <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
-                        <img class="feature-img" src="./assets/money-with-wings-svgrepo-com 1.png" alt="">
-                        <div>
-                            <h3 class="text-24 font-bold"> <span class="text-orange">Affordable</span>  fees and discounts</h3>
-                            <p class="text-16">We aim to make doctor reachable with fees filtering, seasonal discounts, personalized coupons and news about them.</p>
-                        </div>
-                    </div>
-                    <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
-                        <img class="feature-img" src="./assets//icon 2.png" alt="">
-                        <div>
-                            <h3 class="text-24 font-bold">Medmeet <span class="text-orange">Community</span> </h3>
-                            <p class="text-16">Join the Medmeet community and discuss about health issues, people’s experience and learn along with doctors. Yes, they are in too!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonials -->
-        <h1 class="bg-emerald-400">testimonials</h1>
+      <!-- Specialties -->
+      <section id="Specialties">
+        <h1 class="text-center text-32 font-bold">
+          Some <span class="text-blue">specialties</span>
+        </h1>
 
-        <!-- Book now -->
-        <h1 class="bg-emerald-400">booknow</h1>
-        
-        <!-- Footer -->
-        <footer class="flex flex-wrap justify-around items-center text-sm md:text-base py-8 md:py-12">
-            <div class="flex flex-wrap justify-center items-center gap-6">
-                <img class="h-8 hover:scale-95 duration-200 " src="./assets/logo-medmeet.png" alt="Medmeet logo">
-                <ul class="flex items-center gap-6">
-                    <li><a id="features-section" class="hover:text-lightblue hover:cursor-pointer">Features</a></li>
-                    <li><a id="customers" class="hover:text-lightblue hover:cursor-pointe>Customers">Customers</a></li>
-                    <li><a href="#" target="_blank" class="hover:text-lightblue hover:cursor-pointer">Doctors</a></li>
-                    <li><a href="#" class="hover:text-lightblue hover:cursor-pointer">Terms of service</a></li>
-                </ul>
+        <!-- CARDS CONTAINERS-->
+
+        <div class="flex w-full justify-center">
+          <div
+            class="flex overflow-x-auto md:grid md:w-2/3 md:justify-items-center md:grid-cols-2 lg:grid-cols-3 py-8 px-2 gap-8"
+          >
+            <div class="specialtie-card">
+              <img
+                class="h-50px w-auto"
+                src="./assets/assets-specialties/emergency-specialtie.svg"
+              />
+              <h3 class="text-center text-2xl font-semibold">Emergency</h3>
             </div>
-            <div class="flex flex-col gap-2 mt-6">
-                <div class="flex justify-center md:justify-end gap-4">
-                    <a href="https://www.facebook.com/" referrerpolicy="no-referrer" target="_blank">
-                        <img class="h-6 w-auto" src="/src/assets/facebook-color-svgrepo-com.svg" alt="Facebook logo" />
-                    </a>
-                    <a href="https://www.instagram.com/" referrerpolicy="no-referrer" target="_blank">
-                        <img class="h-6 w-auto" src="/src/assets/instagram-1-svgrepo-com.svg" alt="Instagram logo" />
-                    </a>
-                    <a href="https://www.youtube.com/" referrerpolicy="no-referrer" target="_blank">
-                        <img class="h-6 w-auto" src="/src/assets/youtube-color-svgrepo-com.svg" alt="Youtube logo" />
-                    </a>
-                    <a href="https://www.twitter.com/" referrerpolicy="no-referrer" target="_blank">
-                        <img class="h-6 w-auto" src="/src/assets/twitter-color-svgrepo-com.svg" alt="Twitter logo" />
-                    </a>
-                </div>
-                <p class="text-center">
-                    2023 &copy; MedTech Innovations - All rights reserved
+
+            <div class="specialtie-card">
+              <img
+                class="h-50px w-auto"
+                src="./assets/assets-specialties/general-medicine-specialtie.svg"
+              />
+              <h3 class="text-center text-2xl font-semibold">
+                General <br />Medicine
+              </h3>
+            </div>
+
+            <div class="specialtie-card">
+              <img
+                class="h-50px w-auto"
+                src="./assets/assets-specialties/allergy-specialtie.svg"
+              />
+              <h3 class="text-center text-2xl font-semibold">
+                Allergy and <br />Immunology
+              </h3>
+            </div>
+
+            <div class="specialtie-card">
+              <img
+                class="h-50px w-auto"
+                src="./assets/assets-specialties/pediatrics-specialties.svg"
+              />
+              <h3 class="text-center text-2xl font-semibold">Pediatrics</h3>
+            </div>
+
+            <div class="specialtie-card">
+              <img
+                class="h-50px w-auto"
+                src="./assets/assets-specialties/psychiatry-specialtie.svg"
+              />
+              <h3 class="text-center text-2xl font-semibold">Psychiatry</h3>
+            </div>
+
+            <div class="specialtie-card">
+              <img
+                class="h-50px w-auto"
+                src="./assets/assets-specialties/family-medicine-specialtie.svg"
+              />
+              <h3 class="text-center text-2xl font-semibold">
+                Family Medicine
+              </h3>
+            </div>
+
+            <div class="specialtie-card">
+              <img
+                class="h-50px w-auto"
+                src="./assets/assets-specialties/endocrinology-specialtie.svg"
+              />
+              <h3 class="text-center text-2xl font-semibold">Endocrinology</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features-link">
+        <div class="container">
+          <div class="flex flex-col items-center">
+            <h1
+              class="text-center bg-emerald-400 text-16 text-orange font-bold"
+            >
+              FEATURES
+            </h1>
+            <h2 class="mb-2 text-center text-32 font-bold">
+              Doctors at your fingertip anytime, anywhere
+            </h2>
+            <p class="mb-2 text-center text-24 font-medium">
+              We aim to make health reachable for everyone
+            </p>
+            <button class="mb-4 text-16 btn btn-secondary-fill">
+              Start now
+            </button>
+          </div>
+          <div class="flex flex-wrap md:gap-10">
+            <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
+              <img
+                class="feature-img"
+                src="./assets/videocall-svgrepo-com 1.png"
+                alt=""
+              />
+              <div>
+                <h3 class="text-24 font-bold">
+                  Collaborative
+                  <span class="text-orange">videoconferences</span>
+                </h3>
+                <p class="text-16">
+                  Collaborative tools to share windows, in-conference chat and
+                  file sharing to make your experience smoother.
                 </p>
+              </div>
             </div>
-        </footer>
-    </main>
-</body>
+            <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
+              <img
+                class="feature-img"
+                src="./assets/chat-svgrepo-com 1.png"
+                alt=""
+              />
+              <div>
+                <h3 class="text-24 font-bold">
+                  <span class="text-orange">Non-stop</span> communication
+                </h3>
+                <p class="text-16">
+                  We know that you might have doubts about that prescription the
+                  doctor sent you. Don’t worry, with Medmeet you can easily
+                  reach your doctor anytime with integrated chat within the
+                  application
+                </p>
+              </div>
+            </div>
+            <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
+              <img
+                class="feature-img"
+                src="./assets/money-with-wings-svgrepo-com 1.png"
+                alt=""
+              />
+              <div>
+                <h3 class="text-24 font-bold">
+                  <span class="text-orange">Affordable</span> fees and discounts
+                </h3>
+                <p class="text-16">
+                  We aim to make doctor reachable with fees filtering, seasonal
+                  discounts, personalized coupons and news about them.
+                </p>
+              </div>
+            </div>
+            <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
+              <img class="feature-img" src="./assets//icon 2.png" alt="" />
+              <div>
+                <h3 class="text-24 font-bold">
+                  Medmeet <span class="text-orange">Community</span>
+                </h3>
+                <p class="text-16">
+                  Join the Medmeet community and discuss about health issues,
+                  people’s experience and learn along with doctors. Yes, they
+                  are in too!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <h1 class="bg-emerald-400">testimonials</h1>
 
+      <!-- Book now -->
+      <h1 class="bg-emerald-400">booknow</h1>
+
+      <!-- Footer -->
+      <footer
+        class="flex flex-wrap justify-around items-center text-sm md:text-base py-8 md:py-12"
+      >
+        <div class="flex flex-wrap justify-center items-center gap-6">
+          <img
+            class="h-8 hover:scale-95 duration-200"
+            src="./assets/logo-medmeet.png"
+            alt="Medmeet logo"
+          />
+          <ul class="flex items-center gap-6">
+            <li>
+              <a
+                id="features-section"
+                class="hover:text-lightblue hover:cursor-pointer"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                id="customers"
+                class="hover:text-lightblue hover:cursor-pointe>Customers"
+                >Customers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                class="hover:text-lightblue hover:cursor-pointer"
+                >Doctors</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-lightblue hover:cursor-pointer"
+                >Terms of service</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-2 mt-6">
+          <div class="flex justify-center md:justify-end gap-4">
+            <a
+              href="https://www.facebook.com/"
+              referrerpolicy="no-referrer"
+              target="_blank"
+            >
+              <img
+                class="h-6 w-auto"
+                src="/src/assets/facebook-color-svgrepo-com.svg"
+                alt="Facebook logo"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              referrerpolicy="no-referrer"
+              target="_blank"
+            >
+              <img
+                class="h-6 w-auto"
+                src="/src/assets/instagram-1-svgrepo-com.svg"
+                alt="Instagram logo"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/"
+              referrerpolicy="no-referrer"
+              target="_blank"
+            >
+              <img
+                class="h-6 w-auto"
+                src="/src/assets/youtube-color-svgrepo-com.svg"
+                alt="Youtube logo"
+              />
+            </a>
+            <a
+              href="https://www.twitter.com/"
+              referrerpolicy="no-referrer"
+              target="_blank"
+            >
+              <img
+                class="h-6 w-auto"
+                src="/src/assets/twitter-color-svgrepo-com.svg"
+                alt="Twitter logo"
+              />
+            </a>
+          </div>
+          <p class="text-center">
+            2023 &copy; MedTech Innovations - All rights reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
