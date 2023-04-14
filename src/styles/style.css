@@ -36,7 +36,7 @@
   }
 
   .specialtie-card {
-    @apply flex flex-col justify-center rounded-lg items-center box-shadow p-6 gap-2;
+    @apply flex flex-col justify-center rounded-lg items-center p-6 gap-2;
     @apply min-w-[16rem] md:min-w-min;
   }
 }
