@@ -17,20 +17,20 @@
   }
 
   .btn-primary-fill {
-    @apply border-2 border-lightblue hover:bg-lightblue;
-    @apply text-lightblue hover:text-white;
+    @apply border-2 border-secondary hover:bg-secondary;
+    @apply text-secondary hover:text-white;
     @apply duration-200;
   }
 
   .btn-secondary-fill {
-    @apply border-2 border-blue hover:bg-blue;
-    @apply text-blue hover:text-white;
+    @apply border-2 border-primary hover:bg-primary;
+    @apply text-primary hover:text-white;
     @apply duration-200;
   }
 
   /*Cards*/
   .card-steps {
-    @apply bg-lightblue drop-shadow-md shadow-black;
+    @apply bg-secondary drop-shadow-md shadow-black;
     @apply py-14 px-8;
     @apply text-white;
   }
