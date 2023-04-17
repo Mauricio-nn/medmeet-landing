@@ -43,13 +43,18 @@
 
   /*Cards*/
   .card-steps {
-    @apply bg-secondary drop-shadow-lg shadow-black text-white stroke-black-500;
+    @apply bg-secondary shadow drop-shadow-lg text-white;
     @apply py-14 px-8;
     @apply hover:scale-105 duration-150;
   }
 
   .specialtie-card {
-    @apply flex flex-col justify-center rounded-lg items-center p-6 gap-2;
-    @apply min-w-[16rem] md:min-w-min;
+    @apply flex flex-col justify-center items-center gap-6 w-full;
+    @apply rounded-lg shadow px-6 py-6;
+  }
+
+  .specialtie-card-icon{
+    @apply h-[100px] w-auto;
+    @apply hover:scale-95 duration-200;
   }
 }

@@ -55,13 +55,12 @@
             <button class="btn btn-primary-full">Sign up</button>
           </div>
         </div>
-
         <!-- Steps -->
-        <div class="lg:flex flex-row sm:overflow-x-auto p-12 container">
+        <div class="lg:flex flex-row p-12 container">
           <div class="card-steps">
             <img class="pb-6" src="./assets/calendar-svgrepo-com 1.svg" alt="calendar" />
-            <h1 class="text-32 font-medium">01 Book an appointment</h1>
-            <p class="text-16">No more waiting for hours in a clinic, or months to see yourdoctor. Doctors on your schedule, book online for reasonableprices.</p>
+            <h1 class="text-32 font-medium">01 Book an Appointment</h1>
+            <p class="text-16">No more waiting for hours in a clinic to see your doctor. Doctors on your schedule, book online for reasonableprices.</p>
           </div>
           <div class="card-steps">
             <img class="pb-6" src="./assets/doctor.svg" alt="doctor" />
@@ -84,33 +83,33 @@
 
         <!-- CARDS CONTAINERS-->
         <div class="flex w-full justify-center">
-          <div class="flex overflow-x-auto md:grid md:w-2/3 md:justify-items-center md:grid-cols-7 lg:grid-cols-3 py-8 px-2 gap-8">
-            <div class="specialtie-card">
-              <img class="h-50px w-auto" src="./assets/assets-specialties/emergency-specialtie.svg"/>
+          <div class="flex overflow-x-auto md:justify-items-center lg:grid-cols-7 py-8 px-2 gap-6">
+            <div class="specialtie-card drop-shadow-lg">
+              <img class="h-[50px] w-auto" src="./assets/assets-specialties/emergency-specialtie.svg"/>
               <h3 class="text-center text-2xl font-semibold">Emergency</h3>
             </div>
             <div class="specialtie-card">
-              <img class="h-50px w-auto" src="./assets/assets-specialties/general-medicine-specialtie.svg"/>
-              <h3 class="text-center text-2xl font-semibold">General <br />Medicine</h3>
+              <img class="h-[50px] w-auto" src="./assets/assets-specialties/general-medicine-specialtie.svg"/>
+              <h3 class="text-center text-2xl font-semibold">General Medicine</h3>
             </div>
             <div class="specialtie-card">
-              <img class="h-50px w-auto" src="./assets/assets-specialties/allergy-specialtie.svg"/>
-              <h3 class="text-center text-2xl font-semibold">Allergy and <br />Immunology</h3>
+              <img class="h-[50px] w-auto" src="./assets/assets-specialties/allergy-specialtie.svg"/>
+              <h3 class="text-center text-2xl font-semibold">Allergy and Immunology</h3>
             </div>
             <div class="specialtie-card">
-              <img class="h-50px w-auto" src="./assets/assets-specialties/pediatrics-specialties.svg"/>
+              <img class="h-[50px] w-auto" src="./assets/assets-specialties/pediatrics-specialties.svg"/>
               <h3 class="text-center text-2xl font-semibold">Pediatrics</h3>
             </div>
             <div class="specialtie-card">
-              <img class="h-50px w-auto" src="./assets/assets-specialties/psychiatry-specialtie.svg"/>
+              <img class="h-[50px] w-auto" src="./assets/assets-specialties/psychiatry-specialtie.svg"/>
               <h3 class="text-center text-2xl font-semibold">Psychiatry</h3>
             </div>
             <div class="specialtie-card">
-              <img class="h-50px w-auto" src="./assets/assets-specialties/family-medicine-specialtie.svg"/>
+              <img class="h-[50px] w-auto" src="./assets/assets-specialties/family-medicine-specialtie.svg"/>
               <h3 class="text-center text-2xl font-semibold">Family Medicine</h3>
             </div>
             <div class="specialtie-card">
-              <img class="h-50px w-auto"src="./assets/assets-specialties/endocrinology-specialtie.svg"/>
+              <img class="h-[50px] w-auto"src="./assets/assets-specialties/endocrinology-specialtie.svg"/>
               <h3 class="text-center text-2xl font-semibold">Endocrinology</h3>
             </div>
           </div>
@@ -119,99 +118,58 @@
 
       <!-- Features -->
       <section id="features-link">
-        <div class="container">
-          <div class="flex flex-col items-center">
-            <h1
-              class="text-center text-16 text-contrast font-bold"
-            >
-              FEATURES
-            </h1>
-            <h2 class="mb-2 text-center text-32 font-bold">
-              Doctors at your fingertip anytime, anywhere
-            </h2>
-            <p class="mb-2 text-center text-24 font-medium">
-              We aim to make health reachable for everyone
-            </p>
-            <button class="mb-4 text-16 btn btn-secondary-fill">
-              Start now
-            </button>
+        <div class="container gap-6">
+          <div class="flex flex-col items-center pb-6">
+            <h1 class="text-center text-16 text-contrast font-extrabold">FEATURES</h1>
+            <h2 class="mb-2 text-center text-32 font-bold">Doctors at your fingertip anytime, anywhere</h2>
+            <p class="mb-2 text-center text-24 font-medium">We aim to make health reachable for everyone</p></button>
+            <button href="#" class="btn btn-secondary-fill">Book now</button>
           </div>
-          <div class="flex flex-wrap md:gap-10">
-            <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
-              <img
-                class="feature-img"
-                src="./assets/videocall-svgrepo-com 1.png"
-                alt=""
-              />
+        
+          <div class="lg:grid lg:grid-cols-2 md:gap-6">
+            <!-- Feature 1 -->
+            <div class="feature-card p-4 flex gap-6">
+              <img class="specialtie-card-icon" src="./assets/videocall-svgrepo-com 1.png" alt="Collaborative videoconferences"/>
               <div>
-                <h3 class="text-24 font-bold">
-                  Collaborative
-                  <span class="text-contrast">videoconferences</span>
-                </h3>
-                <p class="text-16">
-                  Collaborative tools to share windows, in-conference chat and
-                  file sharing to make your experience smoother.
-                </p>
+                <h3 class="text-24 font-bold">Collaborative<span class="text-contrast"> videoconferences</span></h3>
+                <p class="text-16">Collaborative tools to share windows, in-conference chat and file sharing to make your experience smoother.</p>
               </div>
             </div>
-            <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
-              <img
-                class="feature-img"
-                src="./assets/chat-svgrepo-com 1.png"
-                alt=""
-              />
+            <!-- Feature 2 -->
+            <div class="feature-card p-4 flex gap-6">
+              <img class="specialtie-card-icon" src="./assets/chat-svgrepo-com 1.png" alt="Non-stop communication"/>
               <div>
-                <h3 class="text-24 font-bold">
-                  <span class="text-contrast">Non-stop</span> communication
-                </h3>
-                <p class="text-16">
-                  We know that you might have doubts about that prescription the
-                  doctor sent you. Don’t worry, with Medmeet you can easily
-                  reach your doctor anytime with integrated chat within the
-                  application
-                </p>
+                <h3 class="text-24 font-bold"><span class="text-contrast">Non-stop</span> communication</h3>
+                <p class="text-16">We know that you might have doubts about that prescription the doctor sent you. Don’t worry, with Medmeet you can easily reach your doctor anytime with integrated chat within the application</p>
               </div>
             </div>
-            <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
-              <img
-                class="feature-img"
-                src="./assets/money-with-wings-svgrepo-com 1.png"
-                alt=""
-              />
+            <!-- Feature 3 -->
+            <div class="feature-card p-4 flex gap-6">
+              <img class="specialtie-card-icon" src="./assets/money-with-wings-svgrepo-com.png" alt="Affordable fees and discounts"/>
               <div>
-                <h3 class="text-24 font-bold">
-                  <span class="text-contrast">Affordable</span> fees and discounts
-                </h3>
-                <p class="text-16">
-                  We aim to make doctor reachable with fees filtering, seasonal
-                  discounts, personalized coupons and news about them.
-                </p>
+                <h3 class="text-24 font-bold"><span class="text-contrast">Affordable</span> fees and discounts</h3>
+                <p class="text-16">We aim to make doctor reachable with fees filtering, seasonaldiscounts, personalized coupons and news about them.</p>
               </div>
             </div>
-            <div class="md:w-45 p-4 w100 flex gap-8 sm:w-100">
-              <img class="feature-img" src="./assets//icon 2.png" alt="" />
+            <!-- Feature 4 -->
+            <div class="feature-card p-4 flex gap-6">
+              <img class="specialtie-card-icon" src="./assets/clock-svgrepo-com.png" alt="Anytime, anywhere"/>
               <div>
-                <h3 class="text-24 font-bold">
-                  Medmeet <span class="text-contrast">Community</span>
-                </h3>
-                <p class="text-16">
-                  Join the Medmeet community and discuss about health issues,
-                  people’s experience and learn along with doctors. Yes, they
-                  are in too!
-                </p>
+                <h3 class="text-24 font-bold">Anytime, <span class="text-contrast">anywhere</span></h3>
+                <p class="text-16">That’s our motto! Medical service might be required anytime or anywhere. Don’t ever worry, there are doctors available. </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Testimonials -->
       <section id="customer-link">
         <div class="container bg-snow">
           <div class="flex flex-col items-center">
             <h1 class=" text-centertext-16 text-contrast font-bold">TESTIMONIALS</h1>
             <h2 class="mb-2 text-center text-32 font-bold text-primary">What our Medmeeters say about us</h2>
-            <p class="mb-2 text-center text-24"><i>Medmeet comunity is like a famiy<br>
-                We share the goods and care for each other</i></p>
+            <p class="mb-2 text-center text-24"><a>Medmeet comunity is like a famiy<br>We share the goods and care for each other</a></p>
           </div>
           
           <!-- CARDS CONTAINERS-->
