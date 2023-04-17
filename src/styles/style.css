@@ -11,7 +11,7 @@
 @layer components {
   /*Buttons*/
   .btn {
-    @apply py-2 px-8;
+    @apply py-2 px-6;
     @apply rounded-full;
     @apply hover:scale-95;
   }
@@ -23,9 +23,22 @@
   }
 
   .btn-secondary-fill {
-    @apply border-2 border-primary hover:bg-primary;
+    @apply border-2 border-primary hover:bg-primary ;
     @apply text-primary hover:text-white;
     @apply duration-200;
+  }
+
+  .btn-primary-full {
+    @apply border-2 border-primary bg-primary ;
+    @apply text-white;
+    @apply duration-200;
+    @apply hover:scale-95;
+  }
+
+  .box-element-fill {
+    @apply bg-secondary;
+    @apply text-white;
+    @apply cursor-pointer duration-150;
   }
 
   /*Cards*/
