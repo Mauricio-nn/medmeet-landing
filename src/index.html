@@ -16,7 +16,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="bg-white flex justify-around items-center p-4">
+    <nav class="bg-white flex justify-around items-center p-4 drop-shadow-lg">
       <a href="#">
         <img class="h-8 hover:scale-95 duration-200" src="./assets/logo-medmeet.png" alt="Medmeet logo"/>
       </a>
@@ -29,7 +29,7 @@
       </ul>
       <div class="md:hidden flex items-center">
         <button class="btn btn-primary-fill mr-6" href="#">Log in</button>
-        <ion-icon class="text-32" onclick="onToggleMenu(this)" name="menu"></ion-icon>
+        <ion-icon class="text-32 hover:cursor-pointer hover:scale-95 duration-200" onclick="onToggleMenu(this)" name="menu"></ion-icon>
       </div>
     </nav>
     <!-- Responsive Navbar -->
@@ -45,10 +45,10 @@
       </div>
     </div>
 
-    <main class="grid grid-cols-1">
+    <main class="grid grid-cols-1 gap-[72px]">
       <!-- Hero -->
-      <section id="hero" class="bg-hero bg-cover">
-        <div class="flex flex-col p-12 container">
+      <section id="hero" class="bg-[url('../assets/pexels-karolina-grabowska-7195310.jpg')] bg-cover">
+        <div class="flex-col p-12 container lg:grid grid-cols-2">
           <div class="text-center md:text-left box-border">
             <h1 class="text-56 font-bold section-title md:text-left">Online Medical<br/>Appointments <a class="text-contrast">Booking</a><br/>Software</h1>
             <p class="text-24 my-6">Book medical appointments with over<a class="text-primary font-bold"> 5000</a> doctors and health specialists around the<a class="text-primary font-bold"> world</a> for affordable prices.</p>
@@ -57,32 +57,21 @@
         </div>
 
         <!-- Steps -->
-        <div class="flex container">
+        <div class="lg:flex flex-row sm:overflow-x-auto p-12 container">
           <div class="card-steps">
-            <img class="pb-6" src="/src/assets/calendar-svgrepo-com 1.svg" alt="calendar" />
+            <img class="pb-6" src="./assets/calendar-svgrepo-com 1.svg" alt="calendar" />
             <h1 class="text-32 font-medium">01 Book an appointment</h1>
-            <p class="text-16">
-              No more waiting for hours in a clinic, or months to see your
-              doctor. Doctors on your schedule, book online for reasonable
-              prices.
-            </p>
+            <p class="text-16">No more waiting for hours in a clinic, or months to see yourdoctor. Doctors on your schedule, book online for reasonableprices.</p>
           </div>
           <div class="card-steps">
-            <img class="pb-6" src="/src/assets/doctor.svg" alt="doctor" />
-            <h1 class="text-24 font-medium">02 Speak to a Doctor</h1>
-            <p class="text-16">
-              Speak directly with professional doctors via video conference
-              through the app, on any device. You’re in control and your time is
-              valuable.
-            </p>
+            <img class="pb-6" src="./assets/doctor.svg" alt="doctor" />
+            <h1 class="text-32 font-medium">02 Speak to a Doctor</h1>
+            <p class="text-16">Speak directly with professional doctors via video conferencethrough the app, on any device. You’re in control and your time isvaluable.</p>
           </div>
           <div class="card-steps">
-            <img class="pb-6" src="/src/assets/community-group-leader-svgrepo-com 1.svg" alt="wrap up" />
-            <h1 class="text-24 font-medium">03 Wrap Up</h1>
-            <p class="text-16">
-              Receive prescriptions, get medical coupons and discounts, chat
-              with your doctor and take a look at Medmeet community.
-            </p>
+            <img class="pb-6" src="./assets/community-group-leader-svgrepo-com 1.svg" alt="wrap up" />
+            <h1 class="text-32 font-medium">03 Wrap Up</h1>
+            <p class="text-16">Receive prescriptions, get medical coupons and discounts, chatwith your doctor and take a look at Medmeet community.</p>
           </div>
         </div>
       </section>
@@ -90,74 +79,38 @@
       <!-- Specialties -->
       <section id="Specialties">
         <h1 class="text-center text-32 font-bold">
-          Some <span class="text-primary">specialties</span>
+          Some <span class="text-contrast">specialties</span>
         </h1>
 
         <!-- CARDS CONTAINERS-->
-
         <div class="flex w-full justify-center">
-          <div
-            class="flex overflow-x-auto md:grid md:w-2/3 md:justify-items-center md:grid-cols-2 lg:grid-cols-3 py-8 px-2 gap-8"
-          >
+          <div class="flex overflow-x-auto md:grid md:w-2/3 md:justify-items-center md:grid-cols-7 lg:grid-cols-3 py-8 px-2 gap-8">
             <div class="specialtie-card">
-              <img
-                class="h-50px w-auto"
-                src="./assets/assets-specialties/emergency-specialtie.svg"
-              />
+              <img class="h-50px w-auto" src="./assets/assets-specialties/emergency-specialtie.svg"/>
               <h3 class="text-center text-2xl font-semibold">Emergency</h3>
             </div>
-
             <div class="specialtie-card">
-              <img
-                class="h-50px w-auto"
-                src="./assets/assets-specialties/general-medicine-specialtie.svg"
-              />
-              <h3 class="text-center text-2xl font-semibold">
-                General <br />Medicine
-              </h3>
+              <img class="h-50px w-auto" src="./assets/assets-specialties/general-medicine-specialtie.svg"/>
+              <h3 class="text-center text-2xl font-semibold">General <br />Medicine</h3>
             </div>
-
             <div class="specialtie-card">
-              <img
-                class="h-50px w-auto"
-                src="./assets/assets-specialties/allergy-specialtie.svg"
-              />
-              <h3 class="text-center text-2xl font-semibold">
-                Allergy and <br />Immunology
-              </h3>
+              <img class="h-50px w-auto" src="./assets/assets-specialties/allergy-specialtie.svg"/>
+              <h3 class="text-center text-2xl font-semibold">Allergy and <br />Immunology</h3>
             </div>
-
             <div class="specialtie-card">
-              <img
-                class="h-50px w-auto"
-                src="./assets/assets-specialties/pediatrics-specialties.svg"
-              />
+              <img class="h-50px w-auto" src="./assets/assets-specialties/pediatrics-specialties.svg"/>
               <h3 class="text-center text-2xl font-semibold">Pediatrics</h3>
             </div>
-
             <div class="specialtie-card">
-              <img
-                class="h-50px w-auto"
-                src="./assets/assets-specialties/psychiatry-specialtie.svg"
-              />
+              <img class="h-50px w-auto" src="./assets/assets-specialties/psychiatry-specialtie.svg"/>
               <h3 class="text-center text-2xl font-semibold">Psychiatry</h3>
             </div>
-
             <div class="specialtie-card">
-              <img
-                class="h-50px w-auto"
-                src="./assets/assets-specialties/family-medicine-specialtie.svg"
-              />
-              <h3 class="text-center text-2xl font-semibold">
-                Family Medicine
-              </h3>
+              <img class="h-50px w-auto" src="./assets/assets-specialties/family-medicine-specialtie.svg"/>
+              <h3 class="text-center text-2xl font-semibold">Family Medicine</h3>
             </div>
-
             <div class="specialtie-card">
-              <img
-                class="h-50px w-auto"
-                src="./assets/assets-specialties/endocrinology-specialtie.svg"
-              />
+              <img class="h-50px w-auto"src="./assets/assets-specialties/endocrinology-specialtie.svg"/>
               <h3 class="text-center text-2xl font-semibold">Endocrinology</h3>
             </div>
           </div>
@@ -315,112 +268,47 @@
       <!-- Pre Footer -->
       <section id = "prefooter">
         <div class="bg-gray-100 m-10 p-120 space-y-5">
-          <h1 class="text-contrast font-bold">BOOK NOW! </h1>
+          <h1 class="text-contrast font-bold">BOOK NOW!</h1>
           <h2 class="text-5xl font-bold">Let Medmeet <span class= "text-primary">care</span> for your <span class= "text-contrast">health</span> </h2>
-          <p class="text-lg">Schedule appointments, manage your calendar and accept
-            payments Anywhere, with free online booking software.</p>
-          <img src="/src/assets/doctor-prefooter.png" alt="Pre Footer Image" class="float-right w-400px h-auto ">
-          <button class="btn btn-secondary-fill">
-            Book now
-          </button>
+          <p class="text-lg">Schedule appointments, manage your calendar and acceptpayments Anywhere, with free online booking software.</p>
+          <img src="./assets/doctor-prefooter.png" alt="Pre Footer Image" class="float-right w-400px h-auto ">
+          <button class="btn btn-secondary-fill">Book now</button>
         </div>
       </section>
 
       <!-- Footer -->
-      <footer
-        class="flex flex-wrap justify-around items-center text-sm md:text-base py-8 md:py-12"
-      >
+      <footer class="flex flex-wrap justify-around items-center text-sm md:text-base py-8 md:py-12">
         <div class="flex flex-wrap justify-center items-center gap-6">
-          <img
-            class="h-8 hover:scale-95 duration-200"
-            src="./assets/logo-medmeet.png"
-            alt="Medmeet logo"
-          />
+          <img  class="h-8 hover:scale-95 duration-200" src="./assets/logo-medmeet.png" alt="Medmeet logo"/>
           <ul class="flex items-center gap-6">
-            <li>
-              <a
-                id="features-section"
-                class="hover:text-secondary hover:cursor-pointer"
-                >Features</a
-              >
-            </li>
-            <li>
-              <a
-                id="customers"
-                class="hover:text-secondary hover:cursor-pointe>Customers"
-                >Customers</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                class="hover:text-secondary hover:cursor-pointer"
-                >Doctors</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-secondary hover:cursor-pointer"
-                >Terms of service</a
-              >
-            </li>
+            <li><a id="features-section" class="hover:text-secondary hover:cursor-pointer">Features</a></li>
+            <li><a id="customers-link" class="hover:text-secondary hover:cursor-pointe>Customers">Customers</a></li>
+            <li><a href="#" target="_blank" class="hover:text-secondary hover:cursor-pointer">Doctors</a></li>
+            <li><a href="#" class="hover:text-secondary hover:cursor-pointer">Terms of service</a></li>
           </ul>
         </div>
         <div class="flex flex-col gap-2 mt-6">
           <div class="flex justify-center md:justify-end gap-4">
-            <a
-              href="https://www.facebook.com/"
-              referrerpolicy="no-referrer"
-              target="_blank"
-            >
-              <img
-                class="h-6 w-auto"
-                src="/src/assets/facebook-color-svgrepo-com.svg"
-                alt="Facebook logo"
-              />
+            <a href="https://www.facebook.com/" referrerpolicy="no-referrer" target="_blank">
+              <img class="h-6 w-auto" src="./assets/facebook-color-svgrepo-com.svg" alt="Facebook logo"/>
             </a>
-            <a
-              href="https://www.instagram.com/"
-              referrerpolicy="no-referrer"
-              target="_blank"
-            >
-              <img
-                class="h-6 w-auto"
-                src="/src/assets/instagram-1-svgrepo-com.svg"
-                alt="Instagram logo"
-              />
+            <a href="https://www.instagram.com/" referrerpolicy="no-referrer" target="_blank">
+              <img class="h-6 w-auto" src="./assets/instagram-1-svgrepo-com.svg"alt="Instagram logo"/>
             </a>
-            <a
-              href="https://www.youtube.com/"
-              referrerpolicy="no-referrer"
-              target="_blank"
-            >
-              <img
-                class="h-6 w-auto"
-                src="/src/assets/youtube-color-svgrepo-com.svg"
-                alt="Youtube logo"
-              />
+            <a href="https://www.youtube.com/" referrerpolicy="no-referrer" target="_blank">
+              <img class="h-6 w-auto" src="./assets/youtube-color-svgrepo-com.svg" alt="Youtube logo"/>
             </a>
-            <a
-              href="https://www.twitter.com/"
-              referrerpolicy="no-referrer"
-              target="_blank"
-            >
-              <img
-                class="h-6 w-auto"
-                src="/src/assets/twitter-color-svgrepo-com.svg"
-                alt="Twitter logo"
-              />
+            <a href="https://www.twitter.com/" referrerpolicy="no-referrer" target="_blank">
+              <img class="h-6 w-auto" src="./assets/twitter-color-svgrepo-com.svg" alt="Twitter logo"/>
             </a>
           </div>
-          <p class="text-center">
-            2023 &copy; MedTech Innovations - All rights reserved
-          </p>
+          <p class="text-center">2023 &copy; MedTech Innovations - All rights reserved</p>
         </div>
       </footer>
     </main>
 
-    <script src="/src/scripts/script.js"></script>
+
+    <script src="./scripts/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>

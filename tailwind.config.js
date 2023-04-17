@@ -3,9 +3,6 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero': "url(/src/assets/pexels-karolina-grabowska-7195310.jpg)",
-      },
       colors: {
         primary : '#2C45B4',
         secondary : '#009FDF',

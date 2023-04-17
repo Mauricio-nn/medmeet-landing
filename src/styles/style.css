@@ -43,9 +43,9 @@
 
   /*Cards*/
   .card-steps {
-    @apply bg-secondary drop-shadow-md shadow-black;
+    @apply bg-secondary drop-shadow-lg shadow-black text-white stroke-black-500;
     @apply py-14 px-8;
-    @apply text-white;
+    @apply hover:scale-105 duration-150;
   }
 
   .specialtie-card {
