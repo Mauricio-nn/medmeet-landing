@@ -674,50 +674,6 @@ html {
   }
 }
 
-.visible {
-  visibility: visible;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.collapse {
-  visibility: collapse;
-}
-
-.top-\[\] {
-  top: ;
-}
-
-.top-\[9\%\] {
-  top: 9%;
-}
-
-.top-\[-100\%\] {
-  top: -100%;
-}
-
-.right-\[-100\%\] {
-  right: -100%;
-}
-
-.right-\[1\%\] {
-  right: 1%;
-}
-
-.right-\[9\%\] {
-  right: 9%;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
 .float-right {
   float: right;
 }
@@ -857,11 +813,6 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .bg-hero {
   background-image: url(/src/assets/pexels-karolina-grabowska-7195310.jpg);
 }
@@ -937,10 +888,6 @@ html {
   line-height: 1.25rem;
 }
 
-.text-48 {
-  font-size: 48px;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -969,11 +916,6 @@ html {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(44 69 180 / var(--tw-text-opacity));
-}
-
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(0 159 223 / var(--tw-text-opacity));
 }
 
 .duration-200 {
