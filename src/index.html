@@ -22,7 +22,7 @@
       </a>
       <ul class="hidden md:flex items-center gap-4">
         <li><a href="#features-link" class="hover:text-secondary hover:cursor-pointer">Features</a></li>
-        <li><a href="#customer-link" class="hover:text-secondary hover:cursor-pointer">Customers</a></li>
+        <li><a href="#customers-link" class="hover:text-secondary hover:cursor-pointer">Customers</a></li>
         <li><a href="#" class="hover:text-secondary hover:cursor-pointer">Doctors</a></li>
         <li><button href="#" class="btn btn-secondary-fill">Book now</button></li>
         <li><button class="btn btn-primary-fill" href="#">Log in</button></li>
@@ -37,7 +37,7 @@
       <div class="md:hidden justify-center items-center text-center">
         <ul class="uppercase w-full">
           <a href="#features-link"><li class="py-4 my-4 hover:box-element-fill">Features</li></a>
-          <a href="#customer-link"><li class="py-4 my-4 hover:box-element-fill">Customer</li></a>
+          <a href="#customer-link"><li class="py-4 my-4 hover:box-element-fill">Customers</li></a>
           <a href="#"><li class="py-4 my-4 hover:box-element-fill">Doctors</li></a>
           <a href="#"><li class="py-4 my-4 text-primary font-bold hover:box-element-fill">Log in</li></a>
           <a href="#"><li class="py-4 my-4 text-primary font-bold hover:box-element-fill">Book now</li></a>
@@ -76,42 +76,37 @@
       </section>
 
       <!-- Specialties -->
-      <section id="Specialties">
-        <h1 class="text-center text-32 font-bold">
-          Some <span class="text-contrast">specialties</span>
-        </h1>
-
-        <!-- CARDS CONTAINERS-->
-        <div class="flex w-full justify-center">
-          <div class="flex overflow-x-auto md:justify-items-center lg:grid-cols-7 py-8 px-2 gap-6">
-            <div class="specialtie-card drop-shadow-lg">
-              <img class="h-[50px] w-auto" src="./assets/assets-specialties/emergency-specialtie.svg"/>
-              <h3 class="text-center text-2xl font-semibold">Emergency</h3>
-            </div>
-            <div class="specialtie-card">
-              <img class="h-[50px] w-auto" src="./assets/assets-specialties/general-medicine-specialtie.svg"/>
-              <h3 class="text-center text-2xl font-semibold">General Medicine</h3>
-            </div>
-            <div class="specialtie-card">
-              <img class="h-[50px] w-auto" src="./assets/assets-specialties/allergy-specialtie.svg"/>
-              <h3 class="text-center text-2xl font-semibold">Allergy and Immunology</h3>
-            </div>
-            <div class="specialtie-card">
-              <img class="h-[50px] w-auto" src="./assets/assets-specialties/pediatrics-specialties.svg"/>
-              <h3 class="text-center text-2xl font-semibold">Pediatrics</h3>
-            </div>
-            <div class="specialtie-card">
-              <img class="h-[50px] w-auto" src="./assets/assets-specialties/psychiatry-specialtie.svg"/>
-              <h3 class="text-center text-2xl font-semibold">Psychiatry</h3>
-            </div>
-            <div class="specialtie-card">
-              <img class="h-[50px] w-auto" src="./assets/assets-specialties/family-medicine-specialtie.svg"/>
-              <h3 class="text-center text-2xl font-semibold">Family Medicine</h3>
-            </div>
-            <div class="specialtie-card">
-              <img class="h-[50px] w-auto"src="./assets/assets-specialties/endocrinology-specialtie.svg"/>
-              <h3 class="text-center text-2xl font-semibold">Endocrinology</h3>
-            </div>
+      <section id="Specialties" class="bg-snow py-6">
+        <h1 class="text-center text-32 font-bold">Some <span class="text-contrast">specialties</span></h1>
+        <!-- Cards containers -->
+        <div class="flex w-full overflow-x-auto md:justify-items-center lg:grid-cols-7 py-8 px-2 gap-6">
+          <div class="specialtie-card">
+            <img class="h-[50px] w-auto" src="./assets/assets-specialties/emergency-specialtie.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Emergency</h3>
+          </div>
+          <div class="specialtie-card">
+            <img class="h-[50px] w-auto" src="./assets/assets-specialties/general-medicine-specialtie.svg"/>
+            <h3 class="text-center text-2xl font-semibold">General Medicine</h3>
+          </div>
+          <div class="specialtie-card">
+            <img class="h-[50px] w-auto" src="./assets/assets-specialties/allergy-specialtie.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Allergy and Immunology</h3>
+          </div>
+          <div class="specialtie-card">
+            <img class="h-[50px] w-auto" src="./assets/assets-specialties/pediatrics-specialties.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Pediatrics</h3>
+          </div>
+          <div class="specialtie-card">
+            <img class="h-[50px] w-auto" src="./assets/assets-specialties/psychiatry-specialtie.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Psychiatry</h3>
+          </div>
+          <div class="specialtie-card">
+            <img class="h-[50px] w-auto" src="./assets/assets-specialties/family-medicine-specialtie.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Family Medicine</h3>
+          </div>
+          <div class="specialtie-card">
+            <img class="h-[50px] w-auto"src="./assets/assets-specialties/endocrinology-specialtie.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Endocrinology</h3>
           </div>
         </div>
       </section>
@@ -164,73 +159,72 @@
       </section>
 
       <!-- Testimonials -->
-      <section id="customer-link">
-        <div class="container bg-snow">
+      <section id="customers-link" class="bg-snow">
+        <div class="container py-6">  
           <div class="flex flex-col items-center">
-            <h1 class=" text-centertext-16 text-contrast font-bold">TESTIMONIALS</h1>
+            <h1 class=" text-center text-16 text-contrast font-bold">TESTIMONIALS</h1>
             <h2 class="mb-2 text-center text-32 font-bold text-primary">What our Medmeeters say about us</h2>
             <p class="mb-2 text-center text-24"><a>Medmeet comunity is like a famiy<br>We share the goods and care for each other</a></p>
           </div>
           
-          <!-- CARDS CONTAINERS-->
-          
-          <div class="flex w-full justify-center">
-            <div class="flex flex-col-5 md:w-2/3 md:justify-items-center md:grid-cols-3 lg:grid-cols-2 py-8 px-2 gap-8">
-              <div class="specialtie-card bg-white">
-                <div class="flex gap-5 h-auto w-21">
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                </div>
-                <img class="h-100px w-auto" src="assets/user-1.png" alt="Patient profile picture" />
-                <p class="text-center text-2xl font-normal">The best doctor’s booking app I’ve used so far. It has been
-                  a life savior when there’s an emergency at home. I highly recommend it!</p>
-                <p class=" text-center text-16 text-contrast font-bold">Roberta Langosh</p>
-                <p class=" text-center text-16 text-primary font-normal">Patient</p>
+          <!-- Cards containers -->
+          <div class="lg:flex gap-6 grid grid-cols-1 md:grid-cols-3">   
+            <!-- Testimonial -->
+            <div class="testimonial-card">
+              <div class="flex w-[24px] h-auto gap-2">
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
               </div>
-              <div class="specialtie-card bg-white">
-                <div class="flex gap-5 h-21 w-21">
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                </div>
-                <img class="h-50px w-auto" src="assets/user-2.png" alt="Doctor profile picture" />
-                <p class="text-center text-2xl font-normal">My colleague introduced me Medmeet during pandemic. Since
-                  I’m a psychologist, they didn’t allow me to work in the clinic back then. Now I regularly
-                  attend patients here and they feel comfortable with all the tools Medmeet offers.</p>
-                <p class=" text-cente text-16 text-contrast font-bold">Samuel Caldas Gill</p>
-                <p class=" text-center text-16 text-primary font-normal">Psychologist Doctor at San Felipe</p>
+              <img src="assets/user-1.png" alt="Patient profile picture" />
+              <p class="text-center text-2xl font-normal">The best doctor’s booking app I’ve used so far. It has been a life savior when there’s an emergency at home. I highly recommend it!</p>
+              <p class=" text-center text-16 text-contrast font-bold">Roberta Langosh<br><span class="text-primary font-normal">Patient</span></p>
+            </div>
+            <!-- Testimonial -->
+            <div class="specialtie-card bg-white">
+              <div class="flex w-[24px] h-auto gap-2">
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/> 
               </div>
-              <div class="specialtie-card bg-white">
-                <div class="flex gap-5 h-21 w-21">
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                  <img src="assets/Star.png" alt="star" />
-                </div>
-                <img class="h-50px w-auto" src="assets/user-3.png" alt="Patient profile picture" />
-                <p class="text-center text-2xl font-normal">Before, I was not used to attending appointments through
-                  internet. But Medmeet changed my mind!</p>
-                <p class=" text-center text-16 text-contrast font-bold">Paul Briston Arevalo</p>
-                <p class=" text-center text-16 text-primary font-normal">Patient</p>
+              <img src="assets/user-2.png" alt="Doctor profile picture"/>
+              <p class="text-center text-2xl font-normal">My colleague introduced me Medmeet during pandemic. Since I’m a psychologist, they didn’t allow me to work in the clinic back then. Now I regularly attend patients here and they feel comfortable with all the tools Medmeet offers.</p>
+              <p class=" text-center text-16 text-contrast font-bold">Samuel Caldas Gill<br><span class="text-primary font-normal">Psychologist Doctor at San Felipe</span></p>
+            </div>
+            <!-- Testimonial -->
+            <div class="specialtie-card bg-white">
+              <div class="flex w-[24px] h-auto gap-2">
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
+                <img src="assets/star.png" alt="star"/>
               </div>
+              <img src="assets/user-3.png" alt="Patient profile picture" />
+              <p class="text-center text-2xl font-normal">Before, I was not used to attending appointments through internet. But Medmeet changed my mind!</p>
+              <p class=" text-center text-16 text-contrast font-bold">Paul Briston Arevalo<br><span class="text-primary font-normal">Patient</span></p>
             </div>
           </div>
-        
       </section>
-      <!-- Pre Footer -->
+
+      <!-- Pre Footer-->
       <section id = "prefooter">
-        <div class="bg-gray-100 m-10 p-120 space-y-5">
-          <h1 class="text-contrast font-bold">BOOK NOW!</h1>
-          <h2 class="text-5xl font-bold">Let Medmeet <span class= "text-primary">care</span> for your <span class= "text-contrast">health</span> </h2>
-          <p class="text-lg">Schedule appointments, manage your calendar and acceptpayments Anywhere, with free online booking software.</p>
-          <img src="./assets/doctor-prefooter.png" alt="Pre Footer Image" class="float-right w-400px h-auto ">
-          <button class="btn btn-secondary-fill">Book now</button>
+        <div class="container">
+          <div class="lg:flex items-center justify-center grid gap-6">
+            <div  class="text-center md:text-left box-border">
+              <h1 class="text-contrast font-extrabold">BOOK NOW!</h1>
+              <h2 class="text-5xl font-bold">Let Medmeet <span class= "text-primary">care</span> for your <span class="text-contrast">health</span></h2>
+              <p class="text-lg py-4">Schedule appointments, manage your calendar and acceptpayments Anywhere, with free online booking software.</p>
+              <button class="btn btn-primary-full">Book now</button>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <img class="w-[400px] h-auto" src="./assets/doctor-prefooter.png" alt="Pre Footer Image">
+            </div>
+          </div>
         </div>
       </section>
 
@@ -239,8 +233,8 @@
         <div class="flex flex-wrap justify-center items-center gap-6">
           <img  class="h-8 hover:scale-95 duration-200" src="./assets/logo-medmeet.png" alt="Medmeet logo"/>
           <ul class="flex items-center gap-6">
-            <li><a id="features-section" class="hover:text-secondary hover:cursor-pointer">Features</a></li>
-            <li><a id="customers-link" class="hover:text-secondary hover:cursor-pointe>Customers">Customers</a></li>
+            <li><a href="#features-link" class="hover:text-secondary hover:cursor-pointer">Features</a></li>
+            <li><a href="#customers-link" class="hover:text-secondary hover:cursor-pointe>Customers">Customers</a></li>
             <li><a href="#" target="_blank" class="hover:text-secondary hover:cursor-pointer">Doctors</a></li>
             <li><a href="#" class="hover:text-secondary hover:cursor-pointer">Terms of service</a></li>
           </ul>
