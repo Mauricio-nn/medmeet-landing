@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Medtech-Innovations/medmeet-landing">
+  <a href="https://github.com/Medtech-Innovations/medmeet-landing" target="_blank">
     <img src="https://i.imgur.com/8bja43a.png" alt="Logo" width="auto" height="80">
   </a>
 
@@ -13,11 +13,11 @@
     <a href="https://docs.google.com/document/d/1xF9qVx2d89Wi-z4sDss8XKDKrDtWvBeJ/edit?usp=sharing&ouid=111591921629582153864&rtpof=true&sd=true"><strong>Explore the project documentation »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://medmeet.netlify.app/" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/Medtech-Innovations/medmeet-landing/issues">Report Bug</a>
+    <a href="https://github.com/Medtech-Innovations/medmeet-landing/issues" target="_blank">Report Bug</a>
     ·
-    <a href="https://github.com/Medtech-Innovations/medmeet-landing/issues">Request Feature</a>
+    <a href="https://github.com/Medtech-Innovations/medmeet-landing/issues" target="_blank">Request Feature</a>
   </p>
 </div>
 
@@ -52,7 +52,7 @@
 This project was made as an final project for the course Open Source Applications by Software Engineer students at University of Applied Sciences (UPC), Peru 😃
 
 <div align="center">
-  <a href="https://github.com/Medtech-Innovations/medmeet-landing">
+  <a href="https://github.com/Medtech-Innovations/medmeet-landing" target="_blank">
     <img src="https://i.imgur.com/uTN9GM3.png" alt="Preview Landing" width="auto" height="500">
   </a>
 </div>
