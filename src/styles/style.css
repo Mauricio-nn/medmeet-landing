@@ -51,10 +51,17 @@
   .specialtie-card {
     @apply flex flex-col justify-center items-center gap-6 w-full;
     @apply rounded-lg shadow px-6 py-6;
+    @apply bg-white drop-shadow-md rounded-3xl hover:scale-95 duration-200;
   }
 
   .specialtie-card-icon{
     @apply h-[100px] w-auto;
     @apply hover:scale-95 duration-200;
+  }
+
+  .testimonial-card {
+    @apply flex flex-col justify-center items-center gap-6 w-full absolute;
+    @apply rounded-lg shadow px-6 py-6 my-6;
+    @apply bg-white drop-shadow-md rounded-3xl hover:scale-95 duration-200; 
   }
 }
