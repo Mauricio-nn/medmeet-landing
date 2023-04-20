@@ -7,6 +7,7 @@
     <meta name="keywords" content="online doctor appointments, telemedicine, virtual healthcare, medical consultations, health appointments, doctor visits, health consultations, online medical care, virtual doctor visits, medical appointments, telehealth, virtual appointments, online healthcare,remote medical consultations"/>
     <meta name="author" content="Medtech Innovation" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/icon-medmeet.png">
     <link rel="stylesheet" href="styles/tailwind.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +19,7 @@
     <!-- Navbar -->
     <nav class="bg-white flex justify-around items-center p-4 drop-shadow-lg">
       <a href="#">
-        <img class="h-8 hover:scale-95 duration-200" src="./assets/logo-medmeet.png" alt="Medmeet logo"/>
+        <img class="h-4 md:h-8 hover:scale-95 duration-200 sm:h-4" src="./assets/logo-medmeet.png" alt="Medmeet logo"/>
       </a>
       <ul class="hidden md:flex items-center gap-4">
         <li><a href="#features-link" class="hover:text-secondary hover:cursor-pointer">Features</a></li>
@@ -27,9 +28,9 @@
         <li><button href="#" class="btn btn-secondary-fill">Book now</button></li>
         <li><button class="btn btn-primary-fill" href="#">Log in</button></li>
       </ul>
-      <div class="md:hidden flex items-center">
-        <button class="btn btn-primary-fill mr-6" href="#">Log in</button>
-        <ion-icon class="text-32 hover:cursor-pointer hover:scale-95 duration-200" onclick="onToggleMenu(this)" name="menu"></ion-icon>
+      <div class="md:hidden flex items-center"> 
+        <button class="btn btn-primary-fill" href="#">Log in</button>
+        <ion-icon class="text-24 hover:cursor-pointer hover:scale-95 duration-200" onclick="onToggleMenu(this)" name="menu"></ion-icon>
       </div>
     </nav>
     <!-- Responsive Navbar -->
@@ -47,11 +48,11 @@
 
     <main class="grid grid-cols-1 gap-[72px]">
       <!-- Hero -->
-      <section id="hero" class="bg-[url('../assets/pexels-karolina-grabowska-7195310.jpg')] bg-cover">
+      <section id="hero" class="bg-snow md:bg-[url('../assets/pexels-karolina-grabowska-7195310.jpg')] bg-cover">
         <div class="flex-col p-12 container lg:grid grid-cols-2">
           <div class="text-center md:text-left box-border">
-            <h1 class="text-56 font-bold section-title md:text-left">Online Medical<br/>Appointments <a class="text-contrast">Booking</a><br/>Software</h1>
-            <p class="text-24 my-6">Book medical appointments with over<a class="text-primary font-bold"> 5000</a> doctors and health specialists around the<a class="text-primary font-bold"> world</a> for affordable prices.</p>
+            <h1 class="text-32 md:text-56 font-bold section-title md:text-left">Online Medical<br/>Appointments <a class="text-contrast">Booking</a><br/>Software</h1>
+            <p class="text-16 md:text-24 my-6">Book medical appointments with over<a class="text-primary font-bold"> 5000</a> doctors and health specialists around the<a class="text-primary font-bold"> world</a> for affordable prices.</p>
             <button class="btn btn-primary-full">Sign up</button>
           </div>
         </div>
@@ -116,8 +117,8 @@
         <div class="container gap-6">
           <div class="flex flex-col items-center pb-6">
             <h1 class="text-center text-16 text-contrast font-extrabold">FEATURES</h1>
-            <h2 class="mb-2 text-center text-32 font-bold">Doctors at your fingertip anytime, anywhere</h2>
-            <p class="mb-2 text-center text-24 font-medium">We aim to make health reachable for everyone</p></button>
+            <h2 class="mb-2 text-center text-24 md:text-32 font-bold">Doctors at your fingertip anytime, anywhere</h2>
+            <p class="mb-2 text-center text-16 md:text-24 font-medium">We aim to make health reachable for everyone</p></button>
             <button href="#" class="btn btn-secondary-fill">Book now</button>
           </div>
         
@@ -163,8 +164,8 @@
         <div class="container py-6 gap-6">  
           <div class="flex flex-col items-center">
             <h1 class=" text-center text-16 text-contrast font-bold">TESTIMONIALS</h1>
-            <h2 class="mb-2 text-center text-32 font-bold text-primary">What our Medmeeters say about us</h2>
-            <p class="mb-2 text-center text-24"><a>Medmeet comunity is like a famiy<br>We share the goods and care for each other</a></p>
+            <h2 class="mb-2 text-center text-24 md:text-32 font-bold text-primary">What our Medmeeters say about us</h2>
+            <p class="mb-2 text-center text-16 md:text-24"><a>Medmeet comunity is like a famiy<br>We share the goods and care for each other</a></p>
           </div>
           
           <!-- Cards containers -->
@@ -179,7 +180,7 @@
                 <img class="w-[24px] h-auto" src="assets/star.png" alt="star"/>
               </div>
               <img src="assets/user-1.png" alt="Patient profile picture" />
-              <p class="text-center text-24 font-normal">The best doctor’s booking app I’ve used so far. It has been a life savior when there’s an emergency at home. I highly recommend it!</p>
+              <p class="text-center text-16 md:text-24 font-normal">The best doctor’s booking app I’ve used so far. It has been a life savior when there’s an emergency at home. I highly recommend it!</p>
               <p class=" text-center text-16 text-contrast font-bold">Roberta Langosh<br><span class="text-primary font-normal">Patient</span></p>
             </div>
             <!-- Testimonial -->
@@ -192,7 +193,7 @@
                 <img class="w-[24px] h-auto" src="assets/star.png" alt="star"/> 
               </div>
               <img src="assets/user-2.png" alt="Doctor profile picture"/>
-              <p class="text-center text-24 font-normal">My colleague introduced me Medmeet during pandemic. Since I’m a psychologist, they didn’t allow me to work in the clinic back then. Now I regularly attend patients here and they feel comfortable with all the tools Medmeet offers.</p>
+              <p class="text-center text-16 md:text-24 font-normal">My colleague introduced me Medmeet during pandemic. Since I’m a psychologist, they didn’t allow me to work in the clinic back then. Now I regularly attend patients here and they feel comfortable with all the tools Medmeet offers.</p>
               <p class=" text-center text-16 text-contrast font-bold">Samuel Caldas Gill<br><span class="text-primary font-normal">Psychologist Doctor at San Felipe</span></p>
             </div>
             <!-- Testimonial -->
@@ -205,7 +206,7 @@
                 <img class="w-[24px] h-auto" src="assets/star.png" alt="star"/> 
               </div>
               <img src="assets/user-3.png" alt="Patient profile picture"/>
-              <p class="text-center text-2xl font-normal">Before, I was not used to attending appointments through internet. But Medmeet changed my mind!</p>
+              <p class="text-center text-16 md:text-24 font-normal">Before, I was not used to attending appointments through internet. But Medmeet changed my mind!</p>
               <p class=" text-center text-16 text-contrast font-bold">Paul Briston Arevalo<br><span class="text-primary font-normal">Patient</span></p>
             </div>
           </div>
@@ -217,8 +218,8 @@
           <div class="lg:flex items-center justify-center grid gap-6">
             <div  class="text-center md:text-left box-border">
               <h1 class="text-contrast font-extrabold">BOOK NOW!</h1>
-              <h2 class="text-5xl font-bold">Let Medmeet <span class= "text-primary">care</span> for your <span class="text-contrast">health</span></h2>
-              <p class="text-lg py-4">Schedule appointments, manage your calendar and acceptpayments Anywhere, with free online booking software.</p>
+              <h2 class="text-32 md:text-48 font-bold">Let Medmeet <span class= "text-primary">care</span> for your <span class="text-contrast">health</span></h2>
+              <p class="text-16 md:text-32 py-4">Schedule appointments, manage your calendar and acceptpayments Anywhere, with free online booking software.</p>
               <button class="btn btn-primary-full">Book now</button>
             </div>
             <div class="flex flex-col justify-center items-center">
