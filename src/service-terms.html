@@ -21,29 +21,42 @@
         <img class="h-6 md:h-8 hover:scale-95 duration-200 sm:h-4" src="./assets/logo-medmeet.png" alt="Medmeet logo"/>
       </a>
       <ul class="hidden md:flex items-center gap-4">
-        <li><a href="/#features-link" class="hover:text-secondary hover:cursor-pointer">Features</a></li>
-        <li><a href="/#customers-link" class="hover:text-secondary hover:cursor-pointer">Customers</a></li>
-        <li><a href="/#about-link" class="hover:text-secondary hover:cursor-pointer">About</a></li>
+        <li><a href="/#features-section" class="hover:text-secondary hover:cursor-pointer">Features</a></li>
+        <li><a href="/#customers-section" class="hover:text-secondary hover:cursor-pointer">Customers</a></li>
+        <li><a href="/#about-section" class="hover:text-secondary hover:cursor-pointer">About</a></li>
         <li>
-          <a href="https://medmeet-app.netlify.app/login" target="_blank">
+          <a href="https://medmeet-app.netlify.app" target="_blank">
             <button class="btn btn-secondary-fill">Open App</button>
           </a>
         </li>
       </ul>
       <div class="md:hidden flex items-center">
-        <a href="https://medmeet-app.netlify.app/login" target="_blank">
+        <a href="https://medmeet-app.netlify.app" target="_blank">
           <button class="btn btn-primary-fill">Open App</button>
         </a>
-        <ion-icon class="text-24 hover:cursor-pointer hover:scale-95 duration-200" onclick="onToggleMenu(this)" name="menu"></ion-icon>
+        <ion-icon 
+          class="text-24 hover:cursor-pointer hover:scale-95 duration-200"
+          id="menuIcon"
+          onclick="onToggleMenu(this)"
+          name="menu">
+        </ion-icon>
       </div>
     </nav>
     <div class="responsive-navbar hidden">
       <div class="md:hidden justify-center items-center text-center">
         <ul class="uppercase w-full">
-          <a href="/#features-link"><li class="py-4 my-4 hover:box-element-fill">Features</li></a>
-          <a href="/#customers-link"><li class="py-4 my-4 hover:box-element-fill">Customers</li></a>
-          <a href="/#about-link"><li class="py-4 my-4 hover:box-element-fill">About</li></a>
-          <a href="https://medmeet-app.netlify.app/login" target="_blank"><li class="py-4 my-4 text-primary font-bold hover:box-element-fill">Open App</li></a>
+          <a href="#features-section" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 hover:box-element-fill">Features</li>
+          </a>
+          <a href="#customers-section" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 hover:box-element-fill">Customers</li>
+          </a>
+          <a href="#about-section" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 hover:box-element-fill">About</li>
+          </a>
+          <a href="https://medmeet-app.netlify.app" target="_blank" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 text-primary font-bold hover:box-element-fill">Open App</li>
+          </a>
         </ul>
       </div>
     </div>
@@ -105,9 +118,9 @@
         <div class="flex flex-wrap justify-center items-center gap-6">
           <img  class="h-8 hover:scale-95 duration-200" src="./assets/logo-medmeet.png" alt="Medmeet logo"/>
           <ul class="flex items-center gap-6">
-            <li><a href="#features-link" class="hover:text-secondary hover:cursor-pointer">Features</a></li>
-            <li><a href="#customers-link" class="hover:text-secondary hover:cursor-pointe>Customers">Customers</a></li>
-            <li><a href="#about-link" class="hover:text-secondary hover:cursor-pointer">About</a></li>
+            <li><a href="/#features-section" class="hover:text-secondary hover:cursor-pointer">Features</a></li>
+            <li><a href="/#customers-section" class="hover:text-secondary hover:cursor-pointe>Customers">Customers</a></li>
+            <li><a href="/#about-section" class="hover:text-secondary hover:cursor-pointer">About</a></li>
             <li><a href="https://medmeet-app.netlify.app/" target="_blank" class="hover:text-secondary hover:cursor-pointer">Medmeet App</a></li>
             <li><a href="service-terms.html" target="_blank" class="hover:text-secondary hover:cursor-pointer">Terms of service</a></li>
           </ul>
