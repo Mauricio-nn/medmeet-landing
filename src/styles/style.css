@@ -61,5 +61,6 @@
 
   .card-icon {
     @apply h-[100px] w-auto;
+    @apply hover:scale-95 duration-200;
   }
 }
