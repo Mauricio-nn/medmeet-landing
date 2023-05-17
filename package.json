@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/styles/style.css -o ./src/styles/tailwind.min.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "serve-script": "^0.0.7"
+  }
+}

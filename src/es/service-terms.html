@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <title>Medmeet | Doctores en línea disponibles</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Get fast, affordable and reliable to remote medical consultations with licensed doctors from the comfort of your home. Sign up now for online medical care 24/7."/>
+    <meta name="keywords" content="online doctor appointments, telemedicine, virtual healthcare, medical consultations, health appointments, doctor visits, health consultations, online medical care, virtual doctor visits, medical appointments, telehealth, virtual appointments, online healthcare,remote medical consultations"/>
+    <meta name="author" content="Medtech Innovation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/icon-medmeet.png">
+    <link rel="stylesheet" href="../styles/tailwind.min.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <nav class="bg-white flex justify-around items-center p-4 drop-shadow-lg">
+      <a href="/es">
+        <img class="h-6 md:h-8 hover:scale-95 duration-200 sm:h-4" src="../assets/logo-medmeet.png" alt="Medmeet logo"/>
+      </a>
+      <ul class="hidden md:flex items-center gap-4">
+        <li><a href="/#features-section" id="features-nav-link" class="hover:text-secondary hover:cursor-pointer">Producto</a></li>
+        <li><a href="/#customers-section" id="customers-nav-link" class="hover:text-secondary hover:cursor-pointer">Clientes</a></li>
+        <li><a href="/#about-section" id="about-nav-link" class="hover:text-secondary hover:cursor-pointer">Sobre nosotros</a></li>
+        <li>
+          <a href="https://medmeet-app.netlify.app" target="_blank">
+            <button class="btn btn-secondary-fill">Abrir App</button>
+          </a>
+        </li>
+      </ul>
+      <div class="md:hidden flex items-center">
+        <a href="https://medmeet-app.netlify.app" target="_blank">
+          <button class="btn btn-primary-fill">Abrir App/button>
+        </a>
+        <ion-icon 
+          class="text-24 hover:cursor-pointer hover:scale-95 duration-200"
+          id="menuIcon"
+          onclick="onToggleMenu(this)"
+          name="menu">
+        </ion-icon>
+      </div>
+    </nav>
+    <div class="responsive-navbar hidden">
+      <div class="md:hidden justify-center items-center text-center">
+        <ul class="uppercase w-full">
+          <a href="/#features-section" id="features-nav-link" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 hover:box-element-fill">Producto</li>
+          </a>
+          <a href="/#customers-section" id="customers-nav-link" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 hover:box-element-fill">Clientes</li>
+          </a>
+          <a href="/#about-section" id="about-nav-link" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 hover:box-element-fill">Sobre nosotros</li>
+          </a>
+          <a href="https://medmeet-app.netlify.app" target="_blank" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 text-primary font-bold hover:box-element-fill">Abrir App</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <main class="flex flex-col items-center gap-8 p-8">
+
+      <h1 class="section-title text-primary text-48 font-bold">TÉRMINOS DE SERVICIO</h1>
+      <p>Bienvenido/a a nuestra aplicación web de citas médicas, Medmeet. Al utilizar el servicio, aceptas quedar sujeto/a a estos Términos de Servicio.</p>
+      <section class="flex flex-col gap-12 md:w-4/5 lg:w-1/2 xl:1/3">
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Descargo de Responsabilidad de Asesoramiento Médico</h2>
+          <p>El servicio te permite reservar citas médicas con proveedores de atención médica. Debes tener al menos 18 años para utilizar el servicio. Eres responsable de proporcionar información precisa y completa al utilizar el servicio.</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Uso del Servicio</h2>
+          <p>El servicio proporciona información y herramientas para ayudarte a encontrar y programar citas médicas con proveedores de atención médica. La información proporcionada en el servicio no tiene la intención de ser asesoramiento médico y no sustituye el asesoramiento, diagnóstico o tratamiento médico profesional. Siempre consulta a un proveedor de atención médica calificado ante cualquier pregunta que puedas tener sobre una condición médica. Nunca desatiendas el asesoramiento médico profesional ni demores en buscarlo debido a algo que hayas leído en el servicio.</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Privacidad</h2>
+          <p>Tomamos tu privacidad en serio. Nuestra Política de Privacidad describe cómo recopilamos, usamos y divulgamos tu información personal cuando utilizas el servicio.</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Propiedad Intelectual</h2>
+          <p>El servicio y todos sus contenidos, características y funcionalidades (incluyendo, entre otros, toda la información, software, texto, gráficos, imágenes, video y audio) son propiedad nuestra o de nuestros licenciantes y están protegidos por leyes de derechos de autor, marcas registradas y otras leyes de propiedad intelectual.</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Contenido del Usuario</h2>
+          <p>Es posible que puedas enviar comentarios, calificaciones y otra información ("Contenido del Usuario") a través del servicio. Al enviar Contenido del Usuario, nos otorgas una licencia no exclusiva, libre de regalías, transferible, sublicenciable y mundial para usar, reproducir, modificar, publicar, mostrar, distribuir y ejecutar el Contenido del Usuario en relación con el servicio.</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Limitación de Responsabilidad</h2>
+          <p>No nos hacemos responsables de los daños que puedan surgir por el uso del servicio, incluyendo, entre otros, daños directos, indirectos, incidentales, consecuentes o punitivos. No garantizamos la disponibilidad o precisión del servicio.</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Indemnización</h2>
+          <p>Aceptas indemnizarnos y mantenernos libres de responsabilidad frente a cualquier reclamo, daño, responsabilidad, costo y gasto (incluyendo honorarios razonables de abogados) derivados de tu uso del servicio, tu Contenido del Usuario o tu violación de estos Términos.</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Modificaciones a los Términos de Servicio</h2>
+          <p>Podemos actualizar estos Términos periódicamente. Eres responsable de revisar regularmente estos Términos. Tu uso continuado del servicio después de cualquier cambio en estos Términos constituye tu aceptación de los nuevos términos.</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Terminación</h2>
+          <p>Podemos terminar tu acceso al servicio en cualquier momento, sin causa o aviso, lo cual puede resultar en la pérdida y destrucción de toda la información asociada con tu cuenta.</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <h2 class="text-3xl md:text-4xl text-secondary mb-4">Ley Aplicable y Jurisdicción</h2>
+          <p>Estos Términos se rigen por las leyes de [inserta la ley y jurisdicción aplicables]. Cualquier acción legal derivada de o relacionada con estos Términos o tu uso del servicio debe presentarse ante los tribunales</p>
+        </article>
+        <article class="flex flex-col gap-4">
+          <p>Si tienes alguna pregunta sobre estos Términos, contáctanos en 
+            <a href="mailto:medmeet@upc.edu.pe?subject=Sobre Medmeet" target="_blank" class="text-primary font-semibold underline">medmeet@upc.edu.pe</a>
+          </p>
+        </article>
+      </section>
+    </main>
+
+
+    <footer class="flex flex-wrap justify-around items-center text-sm md:text-base py-8 md:py-12">
+      <div class="flex flex-wrap justify-center items-center gap-6">
+        <img class="h-8 hover:scale-95 duration-200" src="../assets/logo-medmeet.png" alt="Medmeet logo"/>
+        <ul class="flex items-center gap-6">
+          <li>
+            <a href="/#features-section" id="features-nav-link" class="hover:text-secondary hover:cursor-pointer">Producto</a>
+          </li>
+          <li>
+            <a href="/#customers-section" id="customers-nav-link" class="hover:text-secondary hover:cursor-pointe>Customers">Clientes</a>
+          </li>
+          <li>
+            <a href="/#about-section" id="about-nav-link" class="hover:text-secondary hover:cursor-pointer">Sobe nosotros</a>
+          </li>
+          <li>
+            <a href="https://medmeet-app.netlify.app" target="_blank" class="hover:text-secondary hover:cursor-pointer">Medmeet App</a>
+          </li>
+          <li>
+            <a href="service-terms.html" target="_blank" class="hover:text-secondary hover:cursor-pointer">Términos de Servicio</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-2 mt-6">
+        <div class="flex justify-center md:justify-end gap-4">
+          <a href="https://www.facebook.com/" referrerpolicy="no-referrer" target="_blank">
+            <img class="h-6 w-auto hover:scale-95 duration-200" src="../assets/facebook-color-svgrepo-com.svg" alt="Facebook logo"/>
+          </a>
+          <a href="https://www.instagram.com/" referrerpolicy="no-referrer" target="_blank">
+            <img class="h-6 w-auto hover:scale-95 duration-200" src="../assets/instagram-1-svgrepo-com.svg"alt="Instagram logo"/>
+          </a>
+          <a href="https://www.youtube.com/" referrerpolicy="no-referrer" target="_blank">
+            <img class="h-6 w-auto hover:scale-95 duration-200" src="../assets/youtube-color-svgrepo-com.svg" alt="Youtube logo"/>
+          </a>
+          <a href="https://www.twitter.com/" referrerpolicy="no-referrer" target="_blank">
+            <img class="h-6 w-auto hover:scale-95 duration-200" src="../assets/twitter-color-svgrepo-com.svg" alt="Twitter logo"/>
+          </a>
+        </div>
+        <p class="text-center">2023 &copy; MedTech Innovations - Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
