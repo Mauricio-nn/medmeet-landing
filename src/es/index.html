@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <title>Medmeet | Doctores en línea disponibles</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Get fast, affordable and reliable to remote medical consultations with licensed doctors from the comfort of your home. Sign up now for online medical care 24/7."/>
+    <meta name="keywords" content="online doctor appointments, telemedicine, virtual healthcare, medical consultations, health appointments, doctor visits, health consultations, online medical care, virtual doctor visits, medical appointments, telehealth, virtual appointments, online healthcare,remote medical consultations"/>
+    <meta name="author" content="Medtech Innovation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/icon-medmeet.png">
+    <link rel="stylesheet" href="../styles/tailwind.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <nav class="bg-white flex justify-around items-center p-4 drop-shadow-lg">
+      <a href="/es">
+        <img class="h-6 md:h-8 hover:scale-95 duration-200 sm:h-4" src="../assets/logo-medmeet.png" alt="Medmeet logo"/>
+      </a>
+      <ul class="hidden md:flex items-center gap-4">
+        <li><a href="#features-section" id="features-nav-link" class="hover:text-secondary hover:cursor-pointer">Producto</a></li>
+        <li><a href="#customers-section" id="customers-nav-link" class="hover:text-secondary hover:cursor-pointer">Clientes</a></li>
+        <li><a href="#about-section" id="about-nav-link" class="hover:text-secondary hover:cursor-pointer">Sobre nosotros</a></li>
+        <li>
+          <a href="https://medmeet-app.netlify.app" target="_blank">
+            <button class="btn btn-secondary-fill">Abrir App</button>
+          </a>
+        </li>
+        <li>
+          <div class="language-switcher">
+            <select id="language-select">
+              <option value="en">
+                <img src="assets/united-kingdom-uk-svgrepo-com.svg"> 
+                English
+              </option>
+              <option value="es">
+                <img src="assets/flag-for-flag-spain-svgrepo-com.svg"> 
+                Español
+              </option>
+            </select>
+          </div>
+        </li>
+      </ul>
+      <div class="md:hidden flex items-center">
+        <a href="https://medmeet-app.netlify.app" target="_blank">
+          <button class="btn btn-primary-fill">Abrir App/button>
+        </a>
+        <ion-icon 
+          class="text-24 hover:cursor-pointer hover:scale-95 duration-200"
+          id="menuIcon"
+          onclick="onToggleMenu(this)"
+          name="menu">
+        </ion-icon>
+      </div>
+    </nav>
+    <div class="responsive-navbar hidden">
+      <div class="md:hidden justify-center items-center text-center">
+        <ul class="uppercase w-full">
+          <a href="#features-section" id="features-nav-link" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 hover:box-element-fill">Producto</li>
+          </a>
+          <a href="#customers-section" id="customers-nav-link" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 hover:box-element-fill">Clientes</li>
+          </a>
+          <a href="#about-section" id="about-nav-link" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 hover:box-element-fill">Sobre nosotros</li>
+          </a>
+          <a href="https://medmeet-app.netlify.app" target="_blank" onclick="closeToggleMenu(this)">
+            <li class="py-4 my-4 text-primary font-bold hover:box-element-fill">Abrir App</li>
+          </a>
+          <li class="py-4 my-4">
+            <div class="language-switcher">
+              <select id="language-select">
+                <option value="en">
+                  <img src="assets/united-kingdom-uk-svgrepo-com.svg"> 
+                  English
+                </option>
+                <option value="es">
+                  <img src="assets/flag-for-flag-spain-svgrepo-com.svg"> 
+                  Español
+                </option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="grid grid-cols-1 gap-[72px]">
+      <section id="hero-section" class="bg-snow md:bg-[url('../assets/pexels-karolina-grabowska-7195310.jpg')] bg-cover">
+        <div class="flex-col p-12 container lg:grid grid-cols-2">
+          <div class="text-center md:text-left box-border">
+            <h1 class="text-32 md:text-56 font-bold section-title md:text-left">
+              Software<br/>de
+              <span class="text-contrast">Citas médicas</span>
+              <br/>en línea
+            </h1>
+            <p class="text-24 my-6">
+              Agenda citas médicas con más de 
+              <span class="text-primary font-bold"> 5000 </span>
+              doctores y especialistas médicos alrededor del
+              <span class="text-primary font-bold"> mundo </span>
+              por precios asequibles.
+            </p>
+            <a href="https://medmeet-app.netlify.app" target= "_blank">
+              <button class="btn btn-primary-full">Registro</button>
+            </a>
+          </div>
+        </div>
+        <div class="lg:flex flex-row p-8 container">
+          <div class="card-steps">
+            <img class="pb-6" src="../assets/calendar-svgrepo-com 1.svg" alt="calendar" />
+            <h1 class="text-32 font-medium">01 Agenda una cita médica</h1>
+            <p class="text-16">
+              No más horas de espera en una clínica para ver a su médico. Médicos en su horario, reserve en línea a precios razonables.
+            </p>
+          </div>
+          <div class="card-steps">
+            <img class="pb-6" src="../assets/doctor.svg" alt="doctor" />
+            <h1 class="text-32 font-medium">02 Asiste a tu cita médica</h1>
+            <p class="text-16">
+              Habla directamente con médicos profesionales por videoconferencia a través de la app, en cualquier dispositivo. Usted tiene el control y su tiempo es valioso.
+            </p>
+          </div>
+          <div class="card-steps">
+            <img class="pb-6" src="../assets/community-group-leader-svgrepo-com 1.svg" alt="wrap up" />
+            <h1 class="text-32 font-medium">03 Cuide su salud</h1>
+            <p class="text-16">
+              Reciba recetas, obtenga cupones y descuentos médicos, chatee con su médico y eche un vistazo a la comunidad de Medmeet.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="specialties-section" class="bg-snow py-6">
+        <h1 class="text-center text-32 font-bold">Algunas <span class="text-contrast">especialidades médicas</span></h1>
+        <div class="flex w-full overflow-x-auto md:justify-items-center lg:grid-cols-7 py-8 px-2 gap-6">
+          <div class="card">
+            <img class="h-[50px] w-auto" src="../assets/assets-specialties/emergency-specialty.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Emergencia</h3>
+          </div>
+          <div class="card">
+            <img class="h-[50px] w-auto" src="../assets/assets-specialties/general-medicine-specialty.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Medicina General</h3>
+          </div>
+          <div class="card">
+            <img class="h-[50px] w-auto" src="../assets/assets-specialties/allergy-specialty.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Alergia e inmunología</h3>
+          </div>
+          <div class="card">
+            <img class="h-[50px] w-auto" src="../assets/assets-specialties/pediatrics-specialty.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Pediatría</h3>
+          </div>
+          <div class="card">
+            <img class="h-[50px] w-auto" src="../assets/assets-specialties/psychiatry-specialty.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Psiquiatría</h3>
+          </div>
+          <div class="card">
+            <img class="h-[50px] w-auto" src="../assets/assets-specialties/family-medicine-specialty.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Medicina familiar</h3>
+          </div>
+          <div class="card">
+            <img class="h-[50px] w-auto"src="../assets/assets-specialties/endocrinology-specialty.svg"/>
+            <h3 class="text-center text-2xl font-semibold">Endocrinología</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="features-section">
+        <div class="container gap-6">
+          <div class="flex flex-col items-center pb-6">
+            <h1 class="text-center text-16 text-contrast font-extrabold">SOBRE EL PRODUCTO</h1>
+            <h2 class="mb-2 text-center text-24 md:text-32 font-bold">Médicos a su alcance en cualquier momento y en cualquier lugar</h2>
+            <p class="mb-2 text-center text-16 md:text-24 font-medium">Nuestro objetivo es hacer que la salud esté al alcance de todos</p></button>
+            <a  href="https://medmeet-app.netlify.app" target= "_blank">
+              <button href="#" class="btn btn-secondary-fill">Agendar ahora</button>
+            </a>
+          </div>
+        
+          <div class="lg:grid lg:grid-cols-2 md:gap-6">
+            <div class="feature-card p-4 flex gap-6">
+              <img class="card-icon" src="../assets/videocall-svgrepo-com 1.png" alt="Collaborative videoconferences"/>
+              <div>
+                <h3 class="text-24 font-bold">Videoconferencias<span class="text-contrast"> colaborativas</span></h3>
+                <p class="text-16">
+                  Herramientas colaborativas para compartir ventanas, chat en conferencia y uso compartido de archivos para que su experiencia sea más fluida.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card p-4 flex gap-6">
+              <img class="card-icon" src="../assets/chat-svgrepo-com 1.png" alt="Non-stop communication"/>
+              <div>
+                <h3 class="text-24 font-bold"><span class="text-contrast">Comunicación</span> sin límites</h3>
+                <p class="text-16">
+                  Sabemos que podrías tener dudas sobre esa receta que te envió el médico. No se preocupe, con Medmeet puede comunicarse fácilmente con su médico en cualquier momento con el chat integrado dentro de la aplicación.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card p-4 flex gap-6">
+              <img class="card-icon" src="../assets/money-with-wings-svgrepo-com.png" alt="Affordable fees and discounts"/>
+              <div>
+                <h3 class="text-24 font-bold"><span class="text-contrast">Precios</span> asequibles y descuentos</h3>
+                <p class="text-16">
+                  Nuestro objetivo es hacer que los médicos estén accesibles con filtrado de tarifas, descuentos por temporada, cupones personalizados y noticias sobre ellos.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card p-4 flex gap-6">
+              <img class="card-icon" src="../assets/clock-svgrepo-com.png" alt="Anytime, anywhere"/>
+              <div>
+                <h3 class="text-24 font-bold">En cualquier momento, <span class="text-contrast">en cualquier lugar</span></h3>
+                <p class="text-16">
+                  ¡Ese es nuestro lema! El servicio médico puede ser necesario en cualquier momento o en cualquier lugar. No se preocupe nunca, hay médicos disponibles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="customers-section" class="bg-snow">
+        <div class="container py-12 gap-6 space-y-6">  
+          <div class="flex flex-col items-center">
+            <h1 class=" text-center text-16 text-contrast font-bold">TESTIMONIOS DE CLIENTES</h1>
+            <h2 class="mb-2 text-center text-24 md:text-32 font-bold text-primary">Lo que nuestros clientes comentan</h2>
+            <p class="mb-2 text-center text-16 md:text-24">
+              La comunidad de Medmeet es como una familia<br>Compartimos los bienes y nos cuidamos unos a otros
+            </p>
+          </div>
+          
+          <div class="lg:flex gap-6 grid grid-cols-1 md:grid-cols-3">   
+            <div class="card">
+              <div class="flex gap-2">  
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+              </div>
+              <img src="../assets/user-1.png" alt="Patient profile picture" />
+              <p class="text-center text-16 md:text-24 font-normal">
+                La mejor aplicación de reservas de médicos que he usado hasta ahora. Ha sido un salvavidas cuando hay una emergencia en casa. ¡Lo recomiendo altamente!
+              </p>
+              <p class=" text-center text-16 text-contrast font-bold">
+                Roberta Langosh<br>
+                <span class="text-primary font-normal">Paciente</span>
+              </p>
+            </div>
+            <div class="card">
+              <div class="flex gap-2">
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/> 
+              </div>
+              <img src="../assets/user-2.png" alt="Doctor profile picture"/>
+              <p class="text-center text-16 md:text-24 font-normal">
+                Mi colega me presentó Medmeet durante la pandemia. Como soy psicóloga, en ese entonces no me dejaban trabajar en la clínica. Ahora atiendo regularmente pacientes aquí y se sienten cómodos con todas las herramientas que ofrece Medmeet.
+              </p>
+              <p class=" text-center text-16 text-contrast font-bold">
+                Samuel Caldas Gill<br>
+                <span class="text-primary font-normal">Psicológo en Clínica San Felipe</span>
+              </p>
+            </div>
+            <div class="card">
+              <div class="flex gap-2">
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/>
+                <img class="w-[24px] h-auto" src="../assets/star.png" alt="star"/> 
+              </div>
+              <img src="../assets/user-3.png" alt="Patient profile picture"/>
+              <p class="text-center text-16 md:text-24 font-normal">
+                Antes no estaba acostumbrado a asistir a citas a través de internet. ¡Pero Medmeet me hizo cambiar de opinión!
+              </p>
+              <p class=" text-center text-16 text-contrast font-bold">
+                Paul Briston Arevalo<br>
+                <span class="text-primary font-normal">Paciente</span>
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <section id="about-section">
+        <div class="container grid md:grid-cols-2">
+          
+            <div class="flex items-center justify-center text-center">
+              <div class="space-y-6">
+                <div>
+                  <h1 class="font-bold text-32 text-primary">Sobre el producto</h1>
+                  <p class="text-16">
+                    ¿Aún con dudas sobre la aplicación? ¡Mira lo que <span class="text-primary font-bold">Medmeet</span> tiene para ofrecer!
+                    <br>
+                    <span class="text-primary font-bold">Medmeet</span> - Software de citas médicas
+                  </p>
+                </div>
+                <iframe
+                  class="w-full h-full"
+                  width="560" height="315"
+                  src="https://www.youtube.com/embed/Y-x0efG1seA"
+                  title="About Medmeet"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center text-center">
+              <div class="space-y-6">
+                <div>
+                  <h1 class="font-bold text-32 text-primary">Medtech Innovations</h1>
+                  <p class="text-16">
+                    Somos un grupo de estudiantes de Ingeniería de Software en la universidad
+                    <a class="text-primary font-bold" href="https://www.upc.edu.pe/" target="_blank">UPC</a>.
+                    <br>
+                    ¡Echa un vistazo a nuestra organización
+                    <a class="text-primary font-bold" href="https://github.com/Medtech-Innovations" target="_blank">Medtech Innovations</a> 
+                    en Github!
+                  </p>
+                </div>
+                <iframe
+                  class="w-full h-full"
+                  width="560" height="315"
+                  src="https://www.youtube.com/embed/Y-x0efG1seA"
+                  title="About Medtech Innovations team video"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section id ="prefooter-section" class="bg-snow">
+        <div class="container py-4">
+          <div class="lg:grid lg:grid-cols-2 items-center justify-center space-y-4 gap-6">
+            <div  class="text-center md:text-left box-border">
+              <h1 class="text-contrast font-extrabold">¡AGENDA AHORA!</h1>
+              <h2 class="text-32 md:text-48 font-bold">Permite a Medmeet <span class= "text-primary">cuidar</span> de su <span class="text-contrast">salud</span></h2>
+              <p class="text-16 md:text-32 py-4">
+                Programe citas, administre su calendario y acepte pagos en cualquier lugar, con el software gratuito de reservas en línea.
+              </p>
+              <a  href="https://medmeet-app.netlify.app" target= "_blank">
+                <button class="btn btn-primary-full">Agenda ahora</button>
+              </a>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <img class="w-[300px] md:w-[400px] h-auto hover:scale-95 duration-200" src="../assets/doctor-prefooter.png" alt="Pre Footer Image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="flex flex-wrap justify-around items-center text-sm md:text-base py-8 md:py-12">
+        <div class="flex flex-wrap justify-center items-center gap-6">
+          <img class="h-8 hover:scale-95 duration-200" src="../assets/logo-medmeet.png" alt="Medmeet logo"/>
+          <ul class="flex items-center gap-6">
+            <li>
+              <a href="#features-section" id="features-nav-link" class="hover:text-secondary hover:cursor-pointer">Producto</a>
+            </li>
+            <li>
+              <a href="#customers-section" id="customers-nav-link" class="hover:text-secondary hover:cursor-pointe>Customers">Clientes</a>
+            </li>
+            <li>
+              <a href="#about-section" id="about-nav-link" class="hover:text-secondary hover:cursor-pointer">Sobe nosotros</a>
+            </li>
+            <li>
+              <a href="https://medmeet-app.netlify.app" target="_blank" class="hover:text-secondary hover:cursor-pointer">Medmeet App</a>
+            </li>
+            <li>
+              <a href="service-terms.html" target="_blank" class="hover:text-secondary hover:cursor-pointer">Términos de Servicio</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-2 mt-6">
+          <div class="flex justify-center md:justify-end gap-4">
+            <a href="https://www.facebook.com/" referrerpolicy="no-referrer" target="_blank">
+              <img class="h-6 w-auto hover:scale-95 duration-200" src="../assets/facebook-color-svgrepo-com.svg" alt="Facebook logo"/>
+            </a>
+            <a href="https://www.instagram.com/" referrerpolicy="no-referrer" target="_blank">
+              <img class="h-6 w-auto hover:scale-95 duration-200" src="../assets/instagram-1-svgrepo-com.svg"alt="Instagram logo"/>
+            </a>
+            <a href="https://www.youtube.com/" referrerpolicy="no-referrer" target="_blank">
+              <img class="h-6 w-auto hover:scale-95 duration-200" src="../assets/youtube-color-svgrepo-com.svg" alt="Youtube logo"/>
+            </a>
+            <a href="https://www.twitter.com/" referrerpolicy="no-referrer" target="_blank">
+              <img class="h-6 w-auto hover:scale-95 duration-200" src="../assets/twitter-color-svgrepo-com.svg" alt="Twitter logo"/>
+            </a>
+          </div>
+          <p class="text-center">2023 &copy; MedTech Innovations - Todos los derechos reservados</p>
+        </div>
+      </footer>
+    </main>
+
+
+    <script src="../scripts/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
