@@ -34,3 +34,15 @@ document.getElementById("about-nav-link").addEventListener("click", (event) => {
     event.preventDefault();
     navigate(aboutSectionRef);
 });
+
+
+const languageSelect = document.getElementById('language-select');
+
+languageSelect.addEventListener('change', function() {
+  const selectedLanguage = languageSelect.value;
+  if (selectedLanguage === 'es') {
+    window.location.href = '/es';
+  } else {
+    window.location.href = '/';
+  }
+});
